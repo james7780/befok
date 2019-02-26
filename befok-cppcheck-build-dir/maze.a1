@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1247793880">
+        <error id="preprocessorErrorDirective" severity="error" msg="#error This module may only be used when compiling for the Lynx game console!" verbose="#error This module may only be used when compiling for the Lynx game console!">
+            <location file="C:\dev\cc65\include\lynx.h" line="43"/>
+        </error>
+</analyzerinfo>

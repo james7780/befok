@@ -1,0 +1,1 @@
+bin2obj -u %1.spr %1

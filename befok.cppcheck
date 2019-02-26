@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="1">
+    <builddir>befok-cppcheck-build-dir</builddir>
+    <platform>Native</platform>
+    <importproject>befok.sln</importproject>
+    <analyze-all-vs-configs>true</analyze-all-vs-configs>
+    <suppressions>
+        <suppression>preprocessorErrorDirective</suppression>
+    </suppressions>
+</project>

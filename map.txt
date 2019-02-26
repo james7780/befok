@@ -1,0 +1,1178 @@
+Modules list:
+-------------
+maze.o:
+    CODE              Offs=000000  Size=00046A  Align=00001  Fill=0000
+    BSS               Offs=000000  Size=00008C  Align=00001  Fill=0000
+lasers.o:
+    DATA              Offs=000000  Size=00003E  Align=00001  Fill=0000
+playfield.o:
+    DATA              Offs=00003E  Size=000365  Align=00001  Fill=0000
+audio.o:
+    CODE              Offs=00046A  Size=00035D  Align=00001  Fill=0000
+    BSS               Offs=00008C  Size=000008  Align=00001  Fill=0000
+befok.o:
+    CODE              Offs=0007C7  Size=002D45  Align=00001  Fill=0000
+    RODATA            Offs=000000  Size=000021  Align=00001  Fill=0000
+    BSS               Offs=000094  Size=0003F9  Align=00001  Fill=0000
+    DATA              Offs=0003A3  Size=001928  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(_hextab.o):
+    RODATA            Offs=000021  Size=000010  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(abs.o):
+    CODE              Offs=00350C  Size=000008  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(add.o):
+    CODE              Offs=003514  Size=000018  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(addeqsp.o):
+    CODE              Offs=00352C  Size=000011  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(addysp.o):
+    CODE              Offs=00353D  Size=00000E  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(aslax1.o):
+    CODE              Offs=00354B  Size=000008  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(aslax3.o):
+    CODE              Offs=003553  Size=00000E  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(aslax4.o):
+    CODE              Offs=003561  Size=000011  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(asrax1.o):
+    CODE              Offs=003572  Size=00000A  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(bootldr.o):
+    BOOTLDR           Offs=000000  Size=0000CB  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(callirq.o):
+    DATA              Offs=001CCB  Size=00001E  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(callmain.o):
+    CODE              Offs=00357C  Size=000017  Align=00001  Fill=0000
+    DATA              Offs=001CE9  Size=000004  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(condes.o):
+    CODE              Offs=003593  Size=00000C  Align=00001  Fill=0000
+    DATA              Offs=001CED  Size=000025  Align=00001  Fill=0000
+    ONCE              Offs=000000  Size=00000C  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(crt0.o):
+    RODATA            Offs=000031  Size=00002C  Align=00001  Fill=0000
+    STARTUP           Offs=000000  Size=00006E  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(decax1.o):
+    CODE              Offs=00359F  Size=000007  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(decax2.o):
+    CODE              Offs=0035A6  Size=000007  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(decax5.o):
+    CODE              Offs=0035AD  Size=000007  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(decax6.o):
+    CODE              Offs=0035B4  Size=000007  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(decax8.o):
+    CODE              Offs=0035BB  Size=000007  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(decaxy.o):
+    CODE              Offs=0035C2  Size=000009  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(decsp1.o):
+    CODE              Offs=0035CB  Size=000009  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(decsp2.o):
+    CODE              Offs=0035D4  Size=00000D  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(decsp3.o):
+    CODE              Offs=0035E1  Size=00000D  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(decsp4.o):
+    CODE              Offs=0035EE  Size=00000D  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(decsp5.o):
+    CODE              Offs=0035FB  Size=00000D  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(decsp6.o):
+    CODE              Offs=003608  Size=00000D  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(decsp7.o):
+    CODE              Offs=003615  Size=00000D  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(defdir.o):
+    DIRECTORY         Offs=000000  Size=000008  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(exehdr.o):
+    EXEHDR            Offs=000000  Size=000040  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(extzp.o):
+    EXTZP             Offs=000000  Size=000019  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(icmp.o):
+    CODE              Offs=003622  Size=00002E  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(incax2.o):
+    CODE              Offs=003650  Size=000007  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(incax3.o):
+    CODE              Offs=003657  Size=000005  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(incax5.o):
+    CODE              Offs=00365C  Size=000005  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(incax8.o):
+    CODE              Offs=003661  Size=000005  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(incaxy.o):
+    CODE              Offs=003666  Size=00000B  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(incsp1.o):
+    CODE              Offs=003671  Size=000007  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(incsp2.o):
+    CODE              Offs=003678  Size=000015  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(incsp3.o):
+    CODE              Offs=00368D  Size=000005  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(incsp4.o):
+    CODE              Offs=003692  Size=000005  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(incsp5.o):
+    CODE              Offs=003697  Size=000005  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(incsp6.o):
+    CODE              Offs=00369C  Size=000005  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(incsp7.o):
+    CODE              Offs=0036A1  Size=000005  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(irq.o):
+    CODE              Offs=0036A6  Size=000001  Align=00001  Fill=0000
+    ONCE              Offs=00000C  Size=00000D  Align=00001  Fill=0000
+    LOWCODE           Offs=000000  Size=000011  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(itoa.o):
+    CODE              Offs=0036A7  Size=000094  Align=00001  Fill=0000
+    RODATA            Offs=00005D  Size=000007  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(ldaxi.o):
+    CODE              Offs=00373B  Size=00000D  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(ldaxsp.o):
+    CODE              Offs=003748  Size=000009  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(leaaxsp.o):
+    CODE              Offs=003751  Size=00000C  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(libref.o):
+C:\dev\cc65/lib/lynx.lib(memcpy.o):
+    CODE              Offs=00375D  Size=000041  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(mod.o):
+    CODE              Offs=00379E  Size=000014  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(mul8.o):
+    CODE              Offs=0037B2  Size=00003A  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(mulax10.o):
+    CODE              Offs=0037EC  Size=000019  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(mulax5.o):
+    CODE              Offs=003805  Size=000014  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(neg.o):
+    CODE              Offs=003819  Size=00000E  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(popa.o):
+    CODE              Offs=003827  Size=00000A  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(popsreg.o):
+    CODE              Offs=003831  Size=00000F  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(pusha.o):
+    CODE              Offs=003840  Size=000016  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(pushax.o):
+    CODE              Offs=003856  Size=00001A  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(pushw.o):
+    CODE              Offs=003870  Size=00000F  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(pushwsp.o):
+    CODE              Offs=00387F  Size=00001C  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(rand.o):
+    CODE              Offs=00389B  Size=00004A  Align=00001  Fill=0000
+    DATA              Offs=001D12  Size=000004  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(shelp.o):
+    CODE              Offs=0038E5  Size=00001E  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(shl.o):
+    CODE              Offs=003903  Size=000030  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(shrax2.o):
+    CODE              Offs=003933  Size=00000B  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(shrax4.o):
+    CODE              Offs=00393E  Size=000011  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(staspidx.o):
+    CODE              Offs=00394F  Size=000016  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(staxsp.o):
+    CODE              Offs=003965  Size=00000B  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(staxspi.o):
+    CODE              Offs=003970  Size=00001A  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(strlen.o):
+    CODE              Offs=00398A  Size=000016  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(sub.o):
+    CODE              Offs=0039A0  Size=000014  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(subeqsp.o):
+    CODE              Offs=0039B4  Size=000015  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(subysp.o):
+    CODE              Offs=0039C9  Size=00000D  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(tgi-kernel.o):
+    CODE              Offs=0039D6  Size=00008E  Align=00001  Fill=0000
+    RODATA            Offs=000064  Size=000004  Align=00001  Fill=0000
+    BSS               Offs=00048D  Size=000028  Align=00001  Fill=0000
+    DATA              Offs=001D16  Size=00003C  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(tgi_colors.o):
+C:\dev\cc65/lib/lynx.lib(tgi_done.o):
+    CODE              Offs=003A64  Size=00000E  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(tgi_getxres.o):
+    CODE              Offs=003A72  Size=000007  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(tgi_getyres.o):
+    CODE              Offs=003A79  Size=000007  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(tgi_init.o):
+    CODE              Offs=003A80  Size=000058  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(tgi_ioctl.o):
+    CODE              Offs=003AD8  Size=00000A  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(tgi_setcolor.o):
+    CODE              Offs=003AE2  Size=00000E  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(tgi_settextstyle.o):
+    CODE              Offs=003AF0  Size=000042  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(tgi_stat_stddrv.o):
+C:\dev\cc65/lib/lynx.lib(udiv.o):
+    CODE              Offs=003B32  Size=00004F  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(umod.o):
+    CODE              Offs=003B81  Size=000011  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(umul8x16r24.o):
+    CODE              Offs=003B92  Size=00002E  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(zerobss.o):
+    CODE              Offs=003BC0  Size=000023  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(zeropage.o):
+    ZEROPAGE          Offs=000000  Size=00001A  Align=00001  Fill=0000
+C:\dev\cc65/lib/lynx.lib(lynx-160-102-16-tgi.o):
+    CODE              Offs=003BE3  Size=000389  Align=00001  Fill=0000
+    RODATA            Offs=000068  Size=000324  Align=00001  Fill=0000
+    BSS               Offs=0004B5  Size=0000BD  Align=00001  Fill=0000
+    DATA              Offs=001D52  Size=000092  Align=00001  Fill=0000
+
+
+Segment list:
+-------------
+Name                   Start     End    Size  Align
+----------------------------------------------------
+DIRECTORY             000000  000007  000008  00001
+EXEHDR                000000  00003F  000040  00001
+ZEROPAGE              000000  000019  00001A  00001
+EXTZP                 00001A  000032  000019  00001
+BOOTLDR               000200  0002CA  0000CB  00001
+STARTUP               000200  00026D  00006E  00001
+LOWCODE               00026E  00027E  000011  00001
+ONCE                  00027F  000299  00001B  00001
+CODE                  00029A  004205  003F6C  00001
+RODATA                004206  004595  000390  00001
+DATA                  004596  006379  001DE4  00001
+BSS                   00637A  0068EB  000572  00001
+
+
+Exports list by name:
+---------------------
+_EndAllSound              000979 RLA    _FileBlockByte            00002F RLZ    
+_FileBlockOffset          000027 RLZ    _FileCurrBlock            00002E RLZ    
+_FileDestAddr             00002A RLZ    _FileDestPtr              000031 RLZ    
+_FileEntry                000026 RLZ    _FileFileLen              00002C RLZ    
+_FileStartBlock           000026 RLZ    _GenerateMaze             000384 RLA    
+_InitMaze                 00029A RLA    _InitSound                000704 RLA    
+_StartSound               0007B4 RLA    _UpdateSound              000991 RLA    
+__BANK0BLOCKSIZE__        000400 REA    __BANK1BLOCKSIZE__        000000 REA    
+__BOOTLDR__               000001 REA    __BSS_RUN__               00637A RLA    
+__BSS_SIZE__              000572 REA    __CALLIRQ__               000001 REA    
+__CODE_SIZE__             003F6C REA    __CONSTRUCTOR_COUNT__     000001 REA    
+__CONSTRUCTOR_TABLE__     000298 RLA    __DATA_SIZE__             001DE4 REA    
+__DEFDIR__                000001 REA    __DESTRUCTOR_COUNT__      000001 REA    
+__DESTRUCTOR_TABLE__      004592 RLA    __EXEHDR__                000001 REA    
+__INTERRUPTOR_COUNT__     000001 REA    __INTERRUPTOR_TABLE__     004594 RLA    
+__LOWCODE_SIZE__          000011 REA    __MAIN_SIZE__             009658 REA    
+__MAIN_START__            000200 RLA    __ONCE_SIZE__             00001B REA    
+__RODATA_SIZE__           000390 REA    __STACKSIZE__             000800 REA    
+__STARTOFDIRECTORY__      0000CB REA    __STARTUP_SIZE__          00006E REA    
+__STARTUP__               000001 REA    __hextab                  004227 RLA    
+__iodat                   00001A RLZ    __iodir                   00001B RLZ    
+__sprsys                  00001D RLZ    __viddma                  00001C RLZ    
+_abs                      0037A6 RLA    _exit                     000269 RLA    
+_itoa                     00395F RLA    _laser_diag1              004596 RLA    
+_laser_diag2              0045A9 RLA    _laser_lr                 0045BC RLA    
+_laser_up                 0045C6 RLA    _lynx_160_102_16_tgi      0062E8 RLA    
+_main                     002CD3 RLA    _maze                     00637A RLA    
+_memcpy                   0039F7 RLA    _playfield                0045D4 RLA    
+_rand                     003B35 RLA    _srand                    003B70 RLA    
+_strlen                   003C24 RLA    _tgi_color                00680F RLA    
+_tgi_colorcount           006828 RLA    _tgi_done                 003CFE RLA    
+_tgi_error                006809 RLA    _tgi_flags                00682E RLA    
+_tgi_font                 006810 RLA    _tgi_fontheight           00682B RLA    
+_tgi_fontwidth            00682A RLA    _tgi_getxres              003D0C RLA    
+_tgi_getyres              003D13 RLA    _tgi_gmode                00680A RLA    
+_tgi_init                 003D1A RLA    _tgi_install              003C70 RLA    
+_tgi_ioctl                003D72 RLA    _tgi_setcolor             003D7C RLA    
+_tgi_settextstyle         003D8A RLA    _tgi_static_stddrv        0062E8 RLA    
+_tgi_textdir              006811 RLA    _tgi_textscalew           006814 RLA    
+_tgi_xmax                 006820 RLA    _tgi_xres                 006824 RLA    
+_tgi_ymax                 006822 RLA    _tgi_yres                 006826 RLA    
+addeqysp                  0037C8 RLA    addysp                    0037D8 RLA    
+addysp1                   0037D7 RLA    aslax1                    0037E5 RLA    
+aslax3                    0037ED RLA    aslax4                    0037FB RLA    
+aslaxy                    003BA4 RLA    asrax1                    00380C RLA    
+callirq                   006261 RLA    callmain                  003816 RLA    
+decax1                    003839 RLA    decax2                    003840 RLA    
+decax5                    003847 RLA    decax6                    00384E RLA    
+decax8                    003855 RLA    decaxy                    00385C RLA    
+decsp1                    003865 RLA    decsp2                    00386E RLA    
+decsp3                    00387B RLA    decsp4                    003888 RLA    
+decsp5                    003895 RLA    decsp6                    0038A2 RLA    
+decsp7                    0038AF RLA    doneirq                   003940 RLA    
+donelib                   00382D RLA    incax2                    0038EA RLA    
+incax3                    0038F1 RLA    incax4                    003900 RLA    
+incax5                    0038F6 RLA    incax8                    0038FB RLA    
+incaxy                    003902 RLA    incsp1                    00390B RLA    
+incsp2                    003919 RLA    incsp3                    003927 RLA    
+incsp4                    00392C RLA    incsp5                    003931 RLA    
+incsp6                    003936 RLA    incsp7                    00393B RLA    
+initirq                   00028B RLA    initlib                   00027F RLA    
+irq_done                  003940  LAI   irq_init                  00028B  LAI   
+ldax0sp                   0039E2 RLA    ldaxi                     0039D5 RLA    
+ldaxidx                   0039D7 RLA    ldaxysp                   0039E4 RLA    
+leaa0sp                   0039EB RLA    mulax10                   003A86 RLA    
+mulax5                    003A9F RLA    negax                     003AB3 RLA    
+popa                      003AC1 RLA    popax                     003912 RLA    
+popsargs                  003B7F RLA    popsreg                   003ACB RLA    
+ptr1                      000008 RLZ    ptr2                      00000A RLZ    
+ptr3                      00000C RLZ    ptr4                      00000E RLZ    
+push0                     003AF0 RLA    pusha                     003ADE RLA    
+pusha0                    003AF2 RLA    pushax                    003AF4 RLA    
+pushw0sp                  003B19 RLA    pushwidx                  003B0C RLA    
+pushwysp                  003B1B RLA    regsave                   000004 RLZ    
+shlax1                    0037E5 RLA    shlax4                    0037FB RLA    
+shrax2                    003BCD RLA    shrax4                    003BD8 RLA    
+sp                        000000 RLZ    sreg                      000002 RLZ    
+staspidx                  003BE9 RLA    stax0sp                   003BFF RLA    
+staxspidx                 003C0A RLA    staxysp                   003C01 RLA    
+subeq0sp                  003C4E RLA    subeqysp                  003C50 RLA    
+subysp                    003C63 RLA    tgi_color_white           00000F REZ    
+tgi_control               0062BB RLA    tgi_done                  0062B5 RLA    
+tgi_getdefpalette         0062D0 RLA    tgi_geterror              0062B8 RLA    
+tgi_init                  0062B2 RLA    tgi_inv_arg               003CD0 RLA    
+tgi_irq                   0062E5  LAI   tgi_libref                000269 RLA    
+tgi_setcolor              0062C7 RLA    tgi_setdrawpage           0062C4 RLA    
+tgi_setpalette            0062CA RLA    tgi_setviewpage           0062C1 RLA    
+tmp1                      000010 RLZ    tmp2                      000011 RLZ    
+tmp3                      000012 RLZ    tmp4                      000013 RLZ    
+tosadda0                  0037AE RLA    tosaddax                  0037B0 RLA    
+tosicmp                   0038BE RLA    tosicmp0                  0038BC RLA    
+tosmoda0                  003A38 RLA    tosmula0                  003A4C RLA    
+tossubax                  003C3C RLA    tosudiva0                 003DCC RLA    
+tosumoda0                 003E1B RLA    tosumula0                 003A4C RLA    
+udiv16                    003DDD RLA    umul8x16r24               003E2C RLA    
+zerobss                   003E5A RLA    
+
+
+Exports list by value:
+----------------------
+sp                        000000 RLZ    __BANK1BLOCKSIZE__        000000 REA    
+__DESTRUCTOR_COUNT__      000001 REA    __BOOTLDR__               000001 REA    
+__STARTUP__               000001 REA    __DEFDIR__                000001 REA    
+__CALLIRQ__               000001 REA    __CONSTRUCTOR_COUNT__     000001 REA    
+__INTERRUPTOR_COUNT__     000001 REA    __EXEHDR__                000001 REA    
+sreg                      000002 RLZ    regsave                   000004 RLZ    
+ptr1                      000008 RLZ    ptr2                      00000A RLZ    
+ptr3                      00000C RLZ    ptr4                      00000E RLZ    
+tgi_color_white           00000F REZ    tmp1                      000010 RLZ    
+__LOWCODE_SIZE__          000011 REA    tmp2                      000011 RLZ    
+tmp3                      000012 RLZ    tmp4                      000013 RLZ    
+__iodat                   00001A RLZ    __iodir                   00001B RLZ    
+__ONCE_SIZE__             00001B REA    __viddma                  00001C RLZ    
+__sprsys                  00001D RLZ    _FileEntry                000026 RLZ    
+_FileStartBlock           000026 RLZ    _FileBlockOffset          000027 RLZ    
+_FileDestAddr             00002A RLZ    _FileFileLen              00002C RLZ    
+_FileCurrBlock            00002E RLZ    _FileBlockByte            00002F RLZ    
+_FileDestPtr              000031 RLZ    __STARTUP_SIZE__          00006E REA    
+__STARTOFDIRECTORY__      0000CB REA    __MAIN_START__            000200 RLA    
+tgi_libref                000269 RLA    _exit                     000269 RLA    
+initlib                   00027F RLA    irq_init                  00028B  LAI   
+initirq                   00028B RLA    __CONSTRUCTOR_TABLE__     000298 RLA    
+_InitMaze                 00029A RLA    _GenerateMaze             000384 RLA    
+__RODATA_SIZE__           000390 REA    __BANK0BLOCKSIZE__        000400 REA    
+__BSS_SIZE__              000572 REA    _InitSound                000704 RLA    
+_StartSound               0007B4 RLA    __STACKSIZE__             000800 REA    
+_EndAllSound              000979 RLA    _UpdateSound              000991 RLA    
+__DATA_SIZE__             001DE4 REA    _main                     002CD3 RLA    
+_abs                      0037A6 RLA    tosadda0                  0037AE RLA    
+tosaddax                  0037B0 RLA    addeqysp                  0037C8 RLA    
+addysp1                   0037D7 RLA    addysp                    0037D8 RLA    
+aslax1                    0037E5 RLA    shlax1                    0037E5 RLA    
+aslax3                    0037ED RLA    aslax4                    0037FB RLA    
+shlax4                    0037FB RLA    asrax1                    00380C RLA    
+callmain                  003816 RLA    donelib                   00382D RLA    
+decax1                    003839 RLA    decax2                    003840 RLA    
+decax5                    003847 RLA    decax6                    00384E RLA    
+decax8                    003855 RLA    decaxy                    00385C RLA    
+decsp1                    003865 RLA    decsp2                    00386E RLA    
+decsp3                    00387B RLA    decsp4                    003888 RLA    
+decsp5                    003895 RLA    decsp6                    0038A2 RLA    
+decsp7                    0038AF RLA    tosicmp0                  0038BC RLA    
+tosicmp                   0038BE RLA    incax2                    0038EA RLA    
+incax3                    0038F1 RLA    incax5                    0038F6 RLA    
+incax8                    0038FB RLA    incax4                    003900 RLA    
+incaxy                    003902 RLA    incsp1                    00390B RLA    
+popax                     003912 RLA    incsp2                    003919 RLA    
+incsp3                    003927 RLA    incsp4                    00392C RLA    
+incsp5                    003931 RLA    incsp6                    003936 RLA    
+incsp7                    00393B RLA    irq_done                  003940  LAI   
+doneirq                   003940 RLA    _itoa                     00395F RLA    
+ldaxi                     0039D5 RLA    ldaxidx                   0039D7 RLA    
+ldax0sp                   0039E2 RLA    ldaxysp                   0039E4 RLA    
+leaa0sp                   0039EB RLA    _memcpy                   0039F7 RLA    
+tosmoda0                  003A38 RLA    tosumula0                 003A4C RLA    
+tosmula0                  003A4C RLA    mulax10                   003A86 RLA    
+mulax5                    003A9F RLA    negax                     003AB3 RLA    
+popa                      003AC1 RLA    popsreg                   003ACB RLA    
+pusha                     003ADE RLA    push0                     003AF0 RLA    
+pusha0                    003AF2 RLA    pushax                    003AF4 RLA    
+pushwidx                  003B0C RLA    pushw0sp                  003B19 RLA    
+pushwysp                  003B1B RLA    _rand                     003B35 RLA    
+_srand                    003B70 RLA    popsargs                  003B7F RLA    
+aslaxy                    003BA4 RLA    shrax2                    003BCD RLA    
+shrax4                    003BD8 RLA    staspidx                  003BE9 RLA    
+stax0sp                   003BFF RLA    staxysp                   003C01 RLA    
+staxspidx                 003C0A RLA    _strlen                   003C24 RLA    
+tossubax                  003C3C RLA    subeq0sp                  003C4E RLA    
+subeqysp                  003C50 RLA    subysp                    003C63 RLA    
+_tgi_install              003C70 RLA    tgi_inv_arg               003CD0 RLA    
+_tgi_done                 003CFE RLA    _tgi_getxres              003D0C RLA    
+_tgi_getyres              003D13 RLA    _tgi_init                 003D1A RLA    
+_tgi_ioctl                003D72 RLA    _tgi_setcolor             003D7C RLA    
+_tgi_settextstyle         003D8A RLA    tosudiva0                 003DCC RLA    
+udiv16                    003DDD RLA    tosumoda0                 003E1B RLA    
+umul8x16r24               003E2C RLA    zerobss                   003E5A RLA    
+__CODE_SIZE__             003F6C REA    __hextab                  004227 RLA    
+__DESTRUCTOR_TABLE__      004592 RLA    __INTERRUPTOR_TABLE__     004594 RLA    
+_laser_diag1              004596 RLA    _laser_diag2              0045A9 RLA    
+_laser_lr                 0045BC RLA    _laser_up                 0045C6 RLA    
+_playfield                0045D4 RLA    callirq                   006261 RLA    
+tgi_init                  0062B2 RLA    tgi_done                  0062B5 RLA    
+tgi_geterror              0062B8 RLA    tgi_control               0062BB RLA    
+tgi_setviewpage           0062C1 RLA    tgi_setdrawpage           0062C4 RLA    
+tgi_setcolor              0062C7 RLA    tgi_setpalette            0062CA RLA    
+tgi_getdefpalette         0062D0 RLA    tgi_irq                   0062E5  LAI   
+_lynx_160_102_16_tgi      0062E8 RLA    _tgi_static_stddrv        0062E8 RLA    
+_maze                     00637A RLA    __BSS_RUN__               00637A RLA    
+_tgi_error                006809 RLA    _tgi_gmode                00680A RLA    
+_tgi_color                00680F RLA    _tgi_font                 006810 RLA    
+_tgi_textdir              006811 RLA    _tgi_textscalew           006814 RLA    
+_tgi_xmax                 006820 RLA    _tgi_ymax                 006822 RLA    
+_tgi_xres                 006824 RLA    _tgi_yres                 006826 RLA    
+_tgi_colorcount           006828 RLA    _tgi_fontwidth            00682A RLA    
+_tgi_fontheight           00682B RLA    _tgi_flags                00682E RLA    
+__MAIN_SIZE__             009658 REA    
+
+
+Imports list:
+-------------
+_EndAllSound (audio.o):
+    befok.o                   befok.s(26)
+_FileBlockByte (extzp.o):
+    bootldr.o                 lynx/extzp.inc(26)
+_FileBlockOffset (extzp.o):
+    bootldr.o                 lynx/extzp.inc(21)
+_FileCurrBlock (extzp.o):
+    bootldr.o                 lynx/extzp.inc(25)
+_FileDestAddr (extzp.o):
+    bootldr.o                 lynx/extzp.inc(23)
+_FileDestPtr (extzp.o):
+    bootldr.o                 lynx/extzp.inc(27)
+_FileEntry (extzp.o):
+    bootldr.o                 lynx/extzp.inc(19)
+_FileFileLen (extzp.o):
+    bootldr.o                 lynx/extzp.inc(24)
+_FileStartBlock (extzp.o):
+    bootldr.o                 lynx/extzp.inc(20)
+_GenerateMaze (maze.o):
+    befok.o                   befok.s(120)
+_InitMaze (maze.o):
+    befok.o                   befok.s(119)
+_InitSound (audio.o):
+    befok.o                   befok.s(24)
+_StartSound (audio.o):
+    befok.o                   befok.s(25)
+_UpdateSound (audio.o):
+    befok.o                   befok.s(27)
+__BANK0BLOCKSIZE__ ([linker generated]):
+    exehdr.o                  lynx/exehdr.s(6)
+    defdir.o                  lynx/defdir.s(11)
+    bootldr.o                 lynx/bootldr.s(8)
+__BANK1BLOCKSIZE__ ([linker generated]):
+    exehdr.o                  lynx/exehdr.s(7)
+__BOOTLDR__ (bootldr.o):
+    [linker generated]        C:\dev\cc65/cfg/lynx-coll.cfg(7)
+__BSS_RUN__ ([linker generated]):
+    zerobss.o                 common/zerobss.s(8)
+__BSS_SIZE__ ([linker generated]):
+    zerobss.o                 common/zerobss.s(8)
+__CALLIRQ__ (callirq.o):
+    tgi-kernel.o              tgi/tgi-kernel.s(84)
+__CODE_SIZE__ ([linker generated]):
+    defdir.o                  lynx/defdir.s(9)
+__CONSTRUCTOR_COUNT__ ([linker generated]):
+    condes.o                  runtime/condes.s(18)
+__CONSTRUCTOR_TABLE__ ([linker generated]):
+    condes.o                  runtime/condes.s(18)
+__DATA_SIZE__ ([linker generated]):
+    defdir.o                  lynx/defdir.s(9)
+__DEFDIR__ (defdir.o):
+    [linker generated]        C:\dev\cc65/cfg/lynx-coll.cfg(8)
+__DESTRUCTOR_COUNT__ ([linker generated]):
+    condes.o                  runtime/condes.s(19)
+__DESTRUCTOR_TABLE__ ([linker generated]):
+    condes.o                  runtime/condes.s(19)
+__EXEHDR__ (exehdr.o):
+    [linker generated]        C:\dev\cc65/cfg/lynx-coll.cfg(6)
+__INTERRUPTOR_COUNT__ ([linker generated]):
+    callirq.o                 runtime/callirq.s(36)
+__INTERRUPTOR_TABLE__ ([linker generated]):
+    callirq.o                 runtime/callirq.s(36)
+__LOWCODE_SIZE__ ([linker generated]):
+    defdir.o                  lynx/defdir.s(10)
+__MAIN_SIZE__ ([linker generated]):
+    crt0.o                    lynx/crt0.s(25)
+__MAIN_START__ ([linker generated]):
+    defdir.o                  lynx/defdir.s(8)
+    crt0.o                    lynx/crt0.s(25)
+__ONCE_SIZE__ ([linker generated]):
+    defdir.o                  lynx/defdir.s(10)
+__RODATA_SIZE__ ([linker generated]):
+    defdir.o                  lynx/defdir.s(9)
+__STACKSIZE__ ([linker generated]):
+    crt0.o                    lynx/crt0.s(25)
+    [linker generated]        C:\dev\cc65/cfg/lynx-coll.cfg(15)
+__STARTOFDIRECTORY__ ([linker generated]):
+    defdir.o                  lynx/defdir.s(7)
+    [linker generated]        C:\dev\cc65/cfg/lynx-coll.cfg(13)
+__STARTUP_SIZE__ ([linker generated]):
+    defdir.o                  lynx/defdir.s(10)
+__STARTUP__ (crt0.o):
+    befok.o                   befok.s(13)
+__hextab (_hextab.o):
+    itoa.o                    common/itoa.s(10)
+__iodat (extzp.o):
+    crt0.o                    lynx/extzp.inc(11)
+    bootldr.o                 lynx/extzp.inc(11)
+__iodir (extzp.o):
+    crt0.o                    lynx/extzp.inc(12)
+__sprsys (extzp.o):
+    lynx-160-102-16-tgi.o     lynx/tgi/../extzp.inc(14)
+    crt0.o                    lynx/extzp.inc(14)
+__viddma (extzp.o):
+    lynx-160-102-16-tgi.o     lynx/tgi/../extzp.inc(13)
+    crt0.o                    lynx/extzp.inc(13)
+_abs (abs.o):
+    befok.o                   befok.s(15)
+_exit (crt0.o):
+    libref.o                  lynx/libref.s(6)
+_itoa (itoa.o):
+    befok.o                   befok.s(16)
+_laser_diag1 (lasers.o):
+    befok.o                   befok.s(49)
+_laser_diag2 (lasers.o):
+    befok.o                   befok.s(50)
+_laser_lr (lasers.o):
+    befok.o                   befok.s(48)
+_laser_up (lasers.o):
+    befok.o                   befok.s(47)
+_lynx_160_102_16_tgi (lynx-160-102-16-tgi.o):
+    tgi_stat_stddrv.o         lynx/tgi_stat_stddrv.s(10)
+_main (befok.o):
+    callmain.o                runtime/callmain.s(11)
+_maze (maze.o):
+    befok.o                   befok.s(118)
+_memcpy (memcpy.o):
+    befok.o                   befok.s(18)
+_playfield (playfield.o):
+    befok.o                   befok.s(46)
+_rand (rand.o):
+    befok.o                   befok.s(14)
+    maze.o                    maze.s(13)
+_srand (rand.o):
+    maze.o                    maze.s(14)
+_strlen (strlen.o):
+    befok.o                   befok.s(17)
+_tgi_color (tgi-kernel.o):
+    tgi_setcolor.o            /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(121)
+_tgi_colorcount (tgi-kernel.o):
+    tgi_setcolor.o            /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(133)
+_tgi_done (tgi_done.o):
+    tgi_init.o                /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(194)
+    tgi-kernel.o              /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(194)
+_tgi_error (tgi-kernel.o):
+    tgi_init.o                /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(117)
+_tgi_flags (tgi-kernel.o):
+    tgi_settextstyle.o        /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(138)
+_tgi_font (tgi-kernel.o):
+    tgi_settextstyle.o        /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(122)
+_tgi_fontheight (tgi-kernel.o):
+    tgi_settextstyle.o        /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(136)
+_tgi_fontwidth (tgi-kernel.o):
+    tgi_settextstyle.o        /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(135)
+_tgi_getxres (tgi_getxres.o):
+    tgi_init.o                /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(210)
+_tgi_getyres (tgi_getyres.o):
+    tgi_init.o                /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(211)
+_tgi_gmode (tgi-kernel.o):
+    tgi_init.o                /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(118)
+    tgi_done.o                /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(118)
+_tgi_init (tgi_init.o):
+    befok.o                   befok.s(22)
+_tgi_install (tgi-kernel.o):
+    befok.o                   befok.s(21)
+_tgi_ioctl (tgi_ioctl.o):
+    befok.o                   befok.s(23)
+_tgi_setcolor (tgi_setcolor.o):
+    tgi_init.o                /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(225)
+_tgi_settextstyle (tgi_settextstyle.o):
+    tgi_init.o                /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(231)
+_tgi_static_stddrv (tgi_stat_stddrv.o):
+    befok.o                   befok.s(20)
+_tgi_textdir (tgi-kernel.o):
+    tgi_settextstyle.o        /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(123)
+_tgi_textscalew (tgi-kernel.o):
+    tgi_settextstyle.o        /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(125)
+_tgi_xmax (tgi-kernel.o):
+    tgi_init.o                /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(131)
+_tgi_xres (tgi-kernel.o):
+    tgi_getxres.o             /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(129)
+_tgi_ymax (tgi-kernel.o):
+    tgi_init.o                /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(132)
+_tgi_yres (tgi-kernel.o):
+    tgi_getyres.o             /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(130)
+addeqysp (addeqsp.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    maze.o                    maze.s(593)
+addysp (addysp.o):
+    incsp7.o                  runtime/incsp7.s(8)
+    incsp6.o                  runtime/incsp6.s(8)
+    incsp5.o                  runtime/incsp5.s(8)
+    incsp4.o                  runtime/incsp4.s(8)
+    incsp3.o                  runtime/incsp3.s(8)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    audio.o                   audio.s(507)
+    audio.o                   audio.s(507)
+    maze.o                    maze.s(593)
+addysp1 (addysp.o):
+    sub.o                     runtime/sub.s(8)
+    itoa.o                    common/itoa.s(9)
+aslax1 (aslax1.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    audio.o                   audio.s(507)
+    maze.o                    maze.s(593)
+aslax3 (aslax3.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    audio.o                   audio.s(507)
+    audio.o                   audio.s(507)
+    audio.o                   audio.s(507)
+aslax4 (aslax4.o):
+    befok.o                   befok.s(12472)
+    audio.o                   audio.s(507)
+aslaxy (shl.o):
+    maze.o                    maze.s(593)
+asrax1 (asrax1.o):
+    befok.o                   befok.s(12472)
+callirq (callirq.o):
+    irq.o                     lynx/irq.s(6)
+callmain (callmain.o):
+    crt0.o                    lynx/crt0.s(23)
+decax1 (decax1.o):
+    tgi_init.o                tgi/tgi_init.s(11)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    maze.o                    maze.s(593)
+decax2 (decax2.o):
+    maze.o                    maze.s(593)
+decax5 (decax5.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+decax6 (decax6.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+decax8 (decax8.o):
+    befok.o                   befok.s(12472)
+decaxy (decaxy.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+decsp1 (decsp1.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    audio.o                   audio.s(507)
+decsp2 (decsp2.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+decsp3 (decsp3.o):
+    befok.o                   befok.s(12472)
+decsp4 (decsp4.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    audio.o                   audio.s(507)
+    audio.o                   audio.s(507)
+    maze.o                    maze.s(593)
+decsp5 (decsp5.o):
+    befok.o                   befok.s(12472)
+decsp6 (decsp6.o):
+    befok.o                   befok.s(12472)
+    audio.o                   audio.s(507)
+decsp7 (decsp7.o):
+    befok.o                   befok.s(12472)
+doneirq (irq.o):
+    callirq.o                 runtime/callirq.s(38)
+donelib (condes.o):
+    crt0.o                    lynx/crt0.s(21)
+incax2 (incax2.o):
+    befok.o                   befok.s(12472)
+    maze.o                    maze.s(593)
+incax3 (incax3.o):
+    befok.o                   befok.s(12472)
+incax4 (incaxy.o):
+    befok.o                   befok.s(12472)
+incax5 (incax5.o):
+    befok.o                   befok.s(12472)
+incax8 (incax8.o):
+    befok.o                   befok.s(12472)
+    audio.o                   audio.s(507)
+incaxy (incaxy.o):
+    incax8.o                  runtime/incax8.s(8)
+    incax5.o                  runtime/incax5.s(8)
+    incax3.o                  runtime/incax3.s(8)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    audio.o                   audio.s(507)
+    audio.o                   audio.s(507)
+    audio.o                   audio.s(507)
+incsp1 (incsp1.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    audio.o                   audio.s(507)
+incsp2 (incsp2.o):
+    staxspi.o                 runtime/staxspi.s(9)
+    staspidx.o                runtime/staspidx.s(8)
+    popsreg.o                 runtime/popsreg.s(8)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+incsp3 (incsp3.o):
+    befok.o                   befok.s(12472)
+incsp4 (incsp4.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    audio.o                   audio.s(507)
+    maze.o                    maze.s(593)
+incsp5 (incsp5.o):
+    audio.o                   audio.s(507)
+incsp6 (incsp6.o):
+    audio.o                   audio.s(507)
+incsp7 (incsp7.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+initirq (irq.o):
+    callirq.o                 runtime/callirq.s(37)
+initlib (condes.o):
+    crt0.o                    lynx/crt0.s(21)
+ldax0sp (ldaxsp.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    audio.o                   audio.s(507)
+    audio.o                   audio.s(507)
+    audio.o                   audio.s(507)
+    maze.o                    maze.s(593)
+    maze.o                    maze.s(593)
+ldaxi (ldaxi.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    audio.o                   audio.s(507)
+    audio.o                   audio.s(507)
+    audio.o                   audio.s(507)
+ldaxidx (ldaxi.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    audio.o                   audio.s(507)
+ldaxysp (ldaxsp.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    audio.o                   audio.s(507)
+    audio.o                   audio.s(507)
+    audio.o                   audio.s(507)
+    maze.o                    maze.s(593)
+    maze.o                    maze.s(593)
+leaa0sp (leaaxsp.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+mulax10 (mulax10.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    maze.o                    maze.s(593)
+    maze.o                    maze.s(593)
+mulax5 (mulax5.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+negax (neg.o):
+    shelp.o                   runtime/shelp.s(11)
+    mod.o                     runtime/mod.s(11)
+    abs.o                     common/abs.s(8)
+popa (popa.o):
+    tgi_settextstyle.o        tgi/tgi_settextstyle.s(10)
+    tgi_ioctl.o               tgi/tgi_ioctl.s(13)
+popax (incsp2.o):
+    tgi_settextstyle.o        tgi/tgi_settextstyle.s(10)
+    shl.o                     runtime/shl.s(15)
+    shelp.o                   runtime/shelp.s(11)
+    memcpy.o                  common/memcpy.s(14)
+popsargs (shelp.o):
+    mod.o                     runtime/mod.s(11)
+popsreg (popsreg.o):
+    umod.o                    runtime/umod.s(8)
+    udiv.o                    runtime/udiv.s(8)
+    mul8.o                    runtime/mul8.s(9)
+ptr1 (zeropage.o):
+    lynx-160-102-16-tgi.o     /home/travis/build/cc65/cc65/asminc/zeropage.inc(12)
+    zerobss.o                 common/zerobss.s(9)
+    umul8x16r24.o             /home/travis/build/cc65/cc65/asminc/zeropage.inc(12)
+    umod.o                    runtime/umod.s(9)
+    udiv.o                    runtime/udiv.s(9)
+    tgi_settextstyle.o        /home/travis/build/cc65/cc65/asminc/zeropage.inc(12)
+    tgi_ioctl.o               tgi/tgi_ioctl.s(14)
+    tgi_init.o                tgi/tgi_init.s(12)
+    tgi-kernel.o              tgi/tgi-kernel.s(8)
+    strlen.o                  common/strlen.s(12)
+    staxspi.o                 runtime/staxspi.s(10)
+    staspidx.o                runtime/staspidx.s(9)
+    pushw.o                   runtime/pushw.s(9)
+    mulax5.o                  runtime/mulax5.s(8)
+    mulax10.o                 runtime/mulax10.s(9)
+    mod.o                     runtime/mod.s(12)
+    memcpy.o                  common/memcpy.s(15)
+    ldaxi.o                   runtime/ldaxi.s(8)
+    befok.o                   befok.s(11)
+    audio.o                   audio.s(11)
+    maze.o                    maze.s(11)
+ptr2 (zeropage.o):
+    lynx-160-102-16-tgi.o     /home/travis/build/cc65/cc65/asminc/zeropage.inc(12)
+    memcpy.o                  common/memcpy.s(15)
+    itoa.o                    common/itoa.s(11)
+ptr3 (zeropage.o):
+    lynx-160-102-16-tgi.o     /home/travis/build/cc65/cc65/asminc/zeropage.inc(12)
+    umul8x16r24.o             /home/travis/build/cc65/cc65/asminc/zeropage.inc(12)
+    memcpy.o                  common/memcpy.s(15)
+    itoa.o                    common/itoa.s(11)
+ptr4 (zeropage.o):
+    lynx-160-102-16-tgi.o     /home/travis/build/cc65/cc65/asminc/zeropage.inc(12)
+    umod.o                    runtime/umod.s(9)
+    udiv.o                    runtime/udiv.s(9)
+    shelp.o                   runtime/shelp.s(12)
+    mul8.o                    runtime/mul8.s(10)
+push0 (pushax.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+pusha (pusha.o):
+    tgi_init.o                tgi/tgi_init.s(11)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    audio.o                   audio.s(507)
+    audio.o                   audio.s(507)
+    audio.o                   audio.s(507)
+pusha0 (pushax.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    audio.o                   audio.s(507)
+pushax (pushax.o):
+    callmain.o                runtime/callmain.s(11)
+    tgi_init.o                tgi/tgi_init.s(11)
+    pushw.o                   runtime/pushw.s(8)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    audio.o                   audio.s(507)
+    audio.o                   audio.s(507)
+    maze.o                    maze.s(593)
+pushw0sp (pushwsp.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+pushwidx (pushw.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+pushwysp (pushwsp.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    audio.o                   audio.s(507)
+    audio.o                   audio.s(507)
+regsave (zeropage.o):
+    befok.o                   befok.s(10)
+shlax1 (aslax1.o):
+    audio.o                   audio.s(507)
+shlax4 (aslax4.o):
+    befok.o                   befok.s(12472)
+    audio.o                   audio.s(507)
+shrax2 (shrax2.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+shrax4 (shrax4.o):
+    audio.o                   audio.s(507)
+    audio.o                   audio.s(507)
+sp (zeropage.o):
+    popa.o                    runtime/popa.s(8)
+    subysp.o                  runtime/subysp.s(9)
+    subeqsp.o                 runtime/subeqsp.s(8)
+    sub.o                     runtime/sub.s(9)
+    staxspi.o                 runtime/staxspi.s(10)
+    staxsp.o                  runtime/staxsp.s(8)
+    staspidx.o                runtime/staspidx.s(9)
+    pushwsp.o                 runtime/pushwsp.s(8)
+    pushax.o                  runtime/pushax.s(8)
+    pusha.o                   runtime/pusha.s(8)
+    popsreg.o                 runtime/popsreg.s(9)
+    memcpy.o                  common/memcpy.s(15)
+    leaaxsp.o                 runtime/leaaxsp.s(8)
+    ldaxsp.o                  runtime/ldaxsp.s(8)
+    itoa.o                    common/itoa.s(11)
+    incsp2.o                  runtime/incsp2.s(8)
+    incsp1.o                  runtime/incsp1.s(8)
+    icmp.o                    runtime/icmp.s(9)
+    decsp7.o                  runtime/decsp7.s(8)
+    decsp6.o                  runtime/decsp6.s(8)
+    decsp5.o                  runtime/decsp5.s(8)
+    decsp4.o                  runtime/decsp4.s(8)
+    decsp3.o                  runtime/decsp3.s(8)
+    decsp2.o                  runtime/decsp2.s(8)
+    decsp1.o                  runtime/decsp1.s(8)
+    crt0.o                    /home/travis/build/cc65/cc65/asminc/zeropage.inc(11)
+    addysp.o                  runtime/addysp.s(8)
+    addeqsp.o                 runtime/addeqsp.s(8)
+    add.o                     runtime/add.s(12)
+    befok.o                   befok.s(10)
+    audio.o                   audio.s(10)
+    maze.o                    maze.s(10)
+sreg (zeropage.o):
+    umul8x16r24.o             /home/travis/build/cc65/cc65/asminc/zeropage.inc(11)
+    udiv.o                    runtime/udiv.s(9)
+    shelp.o                   runtime/shelp.s(12)
+    popsreg.o                 runtime/popsreg.s(9)
+    mul8.o                    runtime/mul8.s(10)
+    itoa.o                    common/itoa.s(11)
+    icmp.o                    runtime/icmp.s(9)
+    befok.o                   befok.s(10)
+    audio.o                   audio.s(10)
+staspidx (staspidx.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    audio.o                   audio.s(507)
+    audio.o                   audio.s(507)
+stax0sp (staxsp.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    audio.o                   audio.s(507)
+    audio.o                   audio.s(507)
+    audio.o                   audio.s(507)
+    maze.o                    maze.s(593)
+    maze.o                    maze.s(593)
+staxspidx (staxspi.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+staxysp (staxsp.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    audio.o                   audio.s(507)
+    audio.o                   audio.s(507)
+    audio.o                   audio.s(507)
+    maze.o                    maze.s(593)
+    maze.o                    maze.s(593)
+subeq0sp (subeqsp.o):
+    maze.o                    maze.s(593)
+subeqysp (subeqsp.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    maze.o                    maze.s(593)
+subysp (subysp.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    maze.o                    maze.s(593)
+tgi_color_white (tgi_colors.o):
+    tgi_init.o                /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(111)
+tgi_control (tgi-kernel.o):
+    tgi_ioctl.o               /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(156)
+tgi_done (tgi-kernel.o):
+    tgi_done.o                /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(154)
+tgi_getdefpalette (tgi-kernel.o):
+    tgi_init.o                /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(163)
+tgi_geterror (tgi-kernel.o):
+    tgi_init.o                /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(155)
+tgi_init (tgi-kernel.o):
+    tgi_init.o                /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(153)
+tgi_inv_arg (tgi-kernel.o):
+    tgi_setcolor.o            /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(179)
+tgi_libref (libref.o):
+    tgi-kernel.o              tgi/tgi-kernel.s(7)
+tgi_setcolor (tgi-kernel.o):
+    tgi_setcolor.o            /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(160)
+tgi_setdrawpage (tgi-kernel.o):
+    tgi_init.o                /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(159)
+tgi_setpalette (tgi-kernel.o):
+    tgi_init.o                /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(161)
+tgi_setviewpage (tgi-kernel.o):
+    tgi_init.o                /home/travis/build/cc65/cc65/asminc/tgi-kernel.inc(158)
+tmp1 (zeropage.o):
+    lynx-160-102-16-tgi.o     /home/travis/build/cc65/cc65/asminc/zeropage.inc(13)
+    staxspi.o                 runtime/staxspi.s(10)
+    staspidx.o                runtime/staspidx.s(9)
+    shrax4.o                  runtime/shrax4.s(8)
+    shrax2.o                  runtime/shrax2.s(8)
+    shl.o                     runtime/shl.s(16)
+    shelp.o                   runtime/shelp.s(12)
+    mod.o                     runtime/mod.s(12)
+    itoa.o                    common/itoa.s(11)
+    incaxy.o                  runtime/incaxy.s(8)
+    decaxy.o                  runtime/decaxy.s(8)
+    asrax1.o                  runtime/asrax1.s(8)
+    aslax4.o                  runtime/aslax4.s(8)
+    aslax3.o                  runtime/aslax3.s(8)
+    aslax1.o                  runtime/aslax1.s(8)
+    befok.o                   befok.s(11)
+tmp2 (zeropage.o):
+    lynx-160-102-16-tgi.o     /home/travis/build/cc65/cc65/asminc/zeropage.inc(13)
+    shelp.o                   runtime/shelp.s(12)
+tmp3 (zeropage.o):
+    lynx-160-102-16-tgi.o     /home/travis/build/cc65/cc65/asminc/zeropage.inc(13)
+tmp4 (zeropage.o):
+    lynx-160-102-16-tgi.o     /home/travis/build/cc65/cc65/asminc/zeropage.inc(13)
+tosadda0 (add.o):
+    audio.o                   audio.s(507)
+tosaddax (add.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+tosicmp (icmp.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+tosicmp0 (icmp.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+tosmoda0 (mod.o):
+    maze.o                    maze.s(593)
+tosmula0 (mul8.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+tossubax (sub.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+tosudiva0 (udiv.o):
+    befok.o                   befok.s(12472)
+tosumoda0 (umod.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+tosumula0 (mul8.o):
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+    befok.o                   befok.s(12472)
+udiv16 (udiv.o):
+    umod.o                    runtime/umod.s(8)
+    mod.o                     runtime/mod.s(11)
+umul8x16r24 (umul8x16r24.o):
+    tgi_settextstyle.o        tgi/tgi_settextstyle.s(9)
+zerobss (zerobss.o):
+    crt0.o                    lynx/crt0.s(22)
+

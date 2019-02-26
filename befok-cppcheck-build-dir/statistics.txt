@@ -1,0 +1,14 @@
+[01.05.2018]
+1525188799303
+cppcheck-error:0
+cppcheck-warning:0
+cppcheck-style:24
+cppcheck-performance:0
+cppcheck-portability:0
+[01.05.2018]
+1525189549503
+cppcheck-error:0
+cppcheck-warning:0
+cppcheck-style:13
+cppcheck-performance:0
+cppcheck-portability:0

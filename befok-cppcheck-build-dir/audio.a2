@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1681605751">
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;channelRegs&apos; can be reduced." verbose="The scope of the variable &apos;channelRegs&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\dev\cc65\befok\audio.c" file="C:\dev\cc65\befok\audio.c" line="77"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;feedback&apos; can be reduced." verbose="The scope of the variable &apos;feedback&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\dev\cc65\befok\audio.c" file="C:\dev\cc65\befok\audio.c" line="78"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;channelRegs&apos; can be reduced." verbose="The scope of the variable &apos;channelRegs&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\dev\cc65\befok\audio.c" file="C:\dev\cc65\befok\audio.c" line="124"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;instrument&apos; can be reduced." verbose="The scope of the variable &apos;instrument&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\dev\cc65\befok\audio.c" file="C:\dev\cc65\befok\audio.c" line="125"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;channelRegs&apos; can be reduced." verbose="The scope of the variable &apos;channelRegs&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\dev\cc65\befok\audio.c" file="C:\dev\cc65\befok\audio.c" line="150"/>
+        </error>
+  <FileInfo check="Bounds checking">
+    <ArraySize array="channelInstrument" size="4"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="InitSound" lineNumber="11"/>
+    <functiondecl functionName="StartSound" lineNumber="74"/>
+    <functiondecl functionName="EndSound" lineNumber="121"/>
+    <functiondecl functionName="UpdateSound" lineNumber="145"/>
+    <functiondecl functionName="PlaySample" lineNumber="185"/>
+    <functioncall functionName="EndSound"/>
+    <functioncall functionName="channel"/>
+    <functioncall functionName="continue"/>
+    <functioncall functionName="envPos"/>
+    <functioncall functionName="feedback"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="instrument"/>
+    <functioncall functionName="pitch"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,36 @@
+// Palette for BEFOK game
+// Colours:
+// Colours needed:
+// - Black
+// - White
+// - Blue for walls
+// - Pink for human
+// - Yellow / Green / Red /Cyan etc for robots
+// - Yellow for Otto
+// - Orange for explosions
+// - Red gradient?
+//
+// Pen indices:
+// 
+// 0 - Black / transparent		RGB(0, 0, 0)
+// 1 - Dark blue (walls)		RGB(64, 64, 208)
+// 2 - Green			RGB(64, 208, 64)
+// 3 - Orange			RGB(240, 160, 64)
+// 4 - Pinky (humans)		RGB(240, 144, 128)
+// 5 - Yellow (Otto)		RGB(240, 208, 32)	
+// 6 - Yellow / Green / Red (robot body colour) Varies
+// 7 - White 			RGB(240, 240, 240)
+// 8 - Grey			RGB(128, 128, 128)
+// 9 - Cyan			RGB(100, 208, 255)
+// 10 - Light green		RGB(128, 255, 128)
+// 11 - Red 1 (very dark)		RGB(128, 0, 0)
+// 12 - Red 2			RGB(160, 0, 0)
+// 13 - Red 3			RGB(192, 0, 0)
+// 14 - Red 4			RGB(224, 0, 0)
+// 15 - Red 5 (light red)		RGB(240, 0, 0)
+
+// NOte: Lynx palette = 16 Green value. followed by 16 Blue/Red values
+char redir[]={0x01,0x23,0x45,0x67,0x89,0xAB,0xCD,0xEF};
+char befok_palette[]={
+	0x00,0x04,0x0B,0x08,0x0B,0x0D,0x0F,0x0F,0x0F,0x0F,0x0F,0x00,0x00,0x00,0x00,0x00,
+	0x00,0xD4,0x3A,0x0F,0x8F,0x4F,0xFF,0xFF,0xAF,0xFF,0xFF,0x08,0x0A,0x0C,0x0E,0x0F};

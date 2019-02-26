@@ -1,0 +1,42 @@
+Game trivia/strategy:  Designed and programmed by Alan McNeil 
+
+The title of this game comes from the series of books called The Berzerker Stories by Fred Saberhagen. 
+
+Berzerk was originally designed for the 6809E CPU, until it was discovered that the processor didn't work properly. The board was then redone to run on a Z80. The speech was done using LPC coding, which cost $1, 000 per word to compress at that time. The game also originally had a monochrome monitor; when Defender was released in color, the company re-considered their display approach and re-designed the display using a color overlay board. 
+
+Evil Otto was named for Dave Otto, who worked for Dave Nutting's Arcade Engineering group as R & D director at the time Alan McNeil did. Each Berzerk unit was "autographed" by the designer. 
+
+Mr. Peter Bukowski was the first person to die playing a video game, when he died of a heart attack playing Berzerk at the "Friar Tuck Game Room" in Calumet City, Illinois. 
+
+Tips and Tricks: 
+
+Always exit the mazes on the sides. If you exit the top or bottom, you will often start in a long corridor with many robots on both sides of you. During the fast rounds (past 8000 points), you will not have a chance. 
+
+The robots will always move toward you. Use this to your benefit when two (or more) robots are close to each other by moving your man back and forth, thus causing the robots to collide and annihilate each other. 
+
+When separated from the robots by a vertical wall, move up and down to place the robots on the same horizontal plane, where they will kill each other with shots aimed in your direction. 
+
+The robots always walk toward you unless you're in their line of fire; then they will pause to shoot. There are eight directions you and they can shoot. The only way to survive the higher levels (10, 000 points +) is to learn the blind spots of the robots. If you are in a robot's blind spot he poses no threat, and you can concentrate on blasting the others. The angle shots are almost never necessary. It is very difficult to hit a robot with an angle shot. When you shoot, your man stops moving, when you can't move, you are vulnerable. Make your shots count and don't bother wasting your time with angles unless you are on an early level and need the practice. 
+
+Because the robots are shorter than you, try to avoid robots at the bottom edge of the screen. By the time you move low enough to get a shot they will have already fired. In contrast, if you come "up" on robots from the bottom, you can shoot their feet and duck back down before their shot reaches you. 
+
+Because your man is a lot taller than he is wide, it is very easy to avoid shots from above and below. Take out the robots to the sides of you first. 
+
+If you poke your head above a wall just far enough to shoot above it, the robots on the other side of it can't shoot you. They will only hit the wall. ALWAYS use this tactic to kill most of the robots in a maze. When you are in the right position, just hold down the fire button. This will make your player stand still. You can inch your way very close to the deadly walls without fear of running into them. 
+
+When shooting up or down, that trick doesn't work. If there is a wall between you and a robot above you, run to the right and start shooting up just past the wall. If you are lucky, the robot will walk into your fire before he gets a shot off. By design, if a robot is above you, he will lock into position directly in-line with your shots, and you will shoot each other's bullets. In early rounds you can overpower a robot and outgun him, but later the robots can keep up with you and you will be in a deadlock. To defeat him, shoot up and immediately walk to the right and he will walk into your bullet. 
+
+Because the robots are attracted to you "as the crow flies", they will tend to clump together and smash into each other. The best way to kill robots is to stand safely behind a wall and let them shoot and smash each other. The ball (Evil Otto) will also kill them. You can ignore some robots in the maze and let Otto kill them for you. Otto follows your position like the robots, so as he comes across the screen, lead him up and down into any remaining robots before you exit. 
+
+The robots are programmed to avoid colliding into the sides of the deadly walls, but they can't detect the start or end of a wall. If a robot is below the end of a wall, you can move up and direct him into the wall end. 
+
+In later rounds, all or the real action takes place in the first two or three seconds of a round. If you survive the initial shots from the robots, you are as good as done with the maze. When a new maze comes on screen, you are very vulnerable. Often you are in the line of fire of five robots. As the new maze slides on-screen, you can see it before the robots appear. Use this time to decide which way to run. Assume that there will be a robot in each "room" or "nook". Shoot the robot right in front of you first, and then run toward his position. By running ahead, you will exit the line of fire of any robots above/below you and also the dreaded angle shots. Once you are out of their line of fire, you can re-enter their line of fire selectively and shoot them. Get to a safe barrier as soon as possible and wait for the robots to move into easy positions. 
+
+The more robots that are in a maze (up to 11), the more time you have until Otto comes out. If the maze has only 1-3 robots, don't waste time shooting them unless they stand between you and the exit. 
+
+At around 20, 000 points, the robots stay light blue. 
+
+Starting at about 10, 000 pts, Berzerk becomes largely a game of luck. If you get an open maze with a lot of robots, there is not much you can do. 
+
+An interesting quirk: The space between your man's head and body is not technically part of your man, so that shots that pass through this area (your "neck") will not kill you. 
+ 

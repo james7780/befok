@@ -1,0 +1,347 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="867221445">
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;n&apos; can be reduced." verbose="The scope of the variable &apos;n&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\dev\cc65\befok\befok.c" file="C:\dev\cc65\befok\befok.c" line="524"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;tx&apos; can be reduced." verbose="The scope of the variable &apos;tx&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\dev\cc65\befok\befok.c" file="C:\dev\cc65\befok\befok.c" line="525"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;ty&apos; can be reduced." verbose="The scope of the variable &apos;ty&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\dev\cc65\befok\befok.c" file="C:\dev\cc65\befok\befok.c" line="525"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;bulletSpeed&apos; can be reduced." verbose="The scope of the variable &apos;bulletSpeed&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\dev\cc65\befok\befok.c" file="C:\dev\cc65\befok\befok.c" line="624"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;p&apos; can be reduced." verbose="The scope of the variable &apos;p&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\dev\cc65\befok\befok.c" file="C:\dev\cc65\befok\befok.c" line="1102"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;pfont&apos; can be reduced." verbose="The scope of the variable &apos;pfont&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\dev\cc65\befok\befok.c" file="C:\dev\cc65\befok\befok.c" line="1285"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;c&apos; can be reduced." verbose="The scope of the variable &apos;c&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\dev\cc65\befok\befok.c" file="C:\dev\cc65\befok\befok.c" line="1286"/>
+        </error>
+  <FileInfo check="Bounds checking">
+    <ArraySize array="animframe_explosion" size="6"/>
+    <ArraySize array="animframe_player_down" size="6"/>
+    <ArraySize array="animframe_player_left" size="6"/>
+    <ArraySize array="animframe_player_up" size="6"/>
+    <ArraySize array="animframe_robot" size="4"/>
+    <ArraySize array="animframe_robot_down" size="4"/>
+    <ArraySize array="animframe_robot_left" size="4"/>
+    <ArraySize array="animframe_robot_up" size="4"/>
+    <ArraySize array="befok_palette" size="32"/>
+    <ArraySize array="bulletSCB" size="7"/>
+    <ArraySize array="dig0" size="27"/>
+    <ArraySize array="dig1" size="27"/>
+    <ArraySize array="dig2" size="24"/>
+    <ArraySize array="dig3" size="25"/>
+    <ArraySize array="dig4" size="26"/>
+    <ArraySize array="dig5" size="24"/>
+    <ArraySize array="dig6" size="25"/>
+    <ArraySize array="dig7" size="24"/>
+    <ArraySize array="dig8" size="26"/>
+    <ArraySize array="dig9" size="25"/>
+    <ArraySize array="digArray" size="10"/>
+    <ArraySize array="env1" size="256"/>
+    <ArraySize array="env2" size="256"/>
+    <ArraySize array="env3" size="256"/>
+    <ArraySize array="explode1" size="32"/>
+    <ArraySize array="explode2" size="53"/>
+    <ArraySize array="explode3" size="76"/>
+    <ArraySize array="explode4" size="85"/>
+    <ArraySize array="explode5" size="85"/>
+    <ArraySize array="explode6" size="76"/>
+    <ArraySize array="font" size="774"/>
+    <ArraySize array="levelData" size="13"/>
+    <ArraySize array="life_spr" size="25"/>
+    <ArraySize array="note_vol" size="4"/>
+    <ArraySize array="obj" size="16"/>
+    <ArraySize array="objseq1" size="300"/>
+    <ArraySize array="otto1" size="85"/>
+    <ArraySize array="otto2" size="85"/>
+    <ArraySize array="player" size="61"/>
+    <ArraySize array="player_down1" size="51"/>
+    <ArraySize array="player_down2" size="52"/>
+    <ArraySize array="player_down3" size="61"/>
+    <ArraySize array="player_down4" size="61"/>
+    <ArraySize array="player_down5" size="53"/>
+    <ArraySize array="player_down6" size="52"/>
+    <ArraySize array="player_hit1" size="64"/>
+    <ArraySize array="player_hit2" size="61"/>
+    <ArraySize array="player_hit3" size="50"/>
+    <ArraySize array="player_hit4" size="50"/>
+    <ArraySize array="player_left1" size="61"/>
+    <ArraySize array="player_left2" size="51"/>
+    <ArraySize array="player_left3" size="51"/>
+    <ArraySize array="player_left4" size="61"/>
+    <ArraySize array="player_left5" size="51"/>
+    <ArraySize array="player_left6" size="51"/>
+    <ArraySize array="player_up1" size="52"/>
+    <ArraySize array="player_up2" size="52"/>
+    <ArraySize array="player_up3" size="51"/>
+    <ArraySize array="player_up4" size="51"/>
+    <ArraySize array="player_up5" size="52"/>
+    <ArraySize array="player_up6" size="61"/>
+    <ArraySize array="redir" size="8"/>
+    <ArraySize array="robot1" size="65"/>
+    <ArraySize array="robot2" size="65"/>
+    <ArraySize array="robot3" size="65"/>
+    <ArraySize array="robot3a" size="65"/>
+    <ArraySize array="robot4" size="65"/>
+    <ArraySize array="robotSCB" size="8"/>
+    <ArraySize array="robot_down1" size="65"/>
+    <ArraySize array="robot_down2" size="65"/>
+    <ArraySize array="robot_down3" size="65"/>
+    <ArraySize array="robot_down4" size="65"/>
+    <ArraySize array="robot_left1" size="65"/>
+    <ArraySize array="robot_left2" size="65"/>
+    <ArraySize array="robot_left3" size="65"/>
+    <ArraySize array="robot_left4" size="65"/>
+    <ArraySize array="robot_up1" size="65"/>
+    <ArraySize array="robot_up2" size="65"/>
+    <ArraySize array="robot_up3" size="65"/>
+    <ArraySize array="robot_up4" size="65"/>
+    <ArraySize array="scoreSCB" size="10"/>
+    <ArraySize array="sin" size="256"/>
+    <ArraySize array="smp_alert" size="1297"/>
+    <ArraySize array="smp_chicken" size="1573"/>
+    <ArraySize array="smp_explode" size="2557"/>
+    <ArraySize array="smp_intruder" size="3236"/>
+    <ArraySize array="smp_plfire" size="599"/>
+    <ArraySize array="sprclr" size="4"/>
+    <ArraySize array="track" size="4"/>
+    <ArraySize array="trk_on" size="4"/>
+    <ArraySize array="ve" size="4"/>
+    <ArraySize array="vestart" size="4"/>
+    <ArraySize array="work_palette" size="32"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="random" lineNumber="114"/>
+    <functiondecl functionName="VSYNC" lineNumber="203"/>
+    <functiondecl functionName="InitRobotSCBs" lineNumber="341"/>
+    <functiondecl functionName="InitBulletSCBs" lineNumber="363"/>
+    <functiondecl functionName="InitScoreSCBs" lineNumber="387"/>
+    <functiondecl functionName="WaitKey" lineNumber="450"/>
+    <functiondecl functionName="InitActor" lineNumber="471"/>
+    <functiondecl functionName="InitActors" lineNumber="516"/>
+    <functiondecl functionName="FireBullet" lineNumber="576"/>
+    <functiondecl functionName="UpdateActors" lineNumber="616"/>
+    <functiondecl functionName="init_seq" lineNumber="904"/>
+    <functiondecl functionName="reset_workpal" lineNumber="1005"/>
+    <functiondecl functionName="SetPalette" lineNumber="1011"/>
+    <functiondecl functionName="SetColour" lineNumber="1023"/>
+    <functiondecl functionName="joypad" lineNumber="1081"/>
+    <functiondecl functionName="bg_clear" lineNumber="1088"/>
+    <functiondecl functionName="bg_rectangle" lineNumber="1099"/>
+    <functiondecl functionName="bg_plot" lineNumber="1114"/>
+    <functiondecl functionName="SetBGTestColour" lineNumber="1226"/>
+    <functiondecl functionName="WaitSuzy" lineNumber="1232"/>
+    <functiondecl functionName="RawPrintString" lineNumber="1282"/>
+    <functiondecl functionName="DrawSprite" lineNumber="1321"/>
+    <functiondecl functionName="SwapBuffers" lineNumber="1330"/>
+    <functiondecl functionName="InitSystem" lineNumber="1360"/>
+    <functiondecl functionName="DoTitle" lineNumber="1442"/>
+    <functiondecl functionName="UpdateSprites" lineNumber="1487"/>
+    <functiondecl functionName="UpdateScoreDisplay" lineNumber="1571"/>
+    <functiondecl functionName="GetLevelFromScore" lineNumber="1598"/>
+    <functiondecl functionName="CalcBonus" lineNumber="1615"/>
+    <functiondecl functionName="main" lineNumber="1637"/>
+    <functioncall functionName="CLI"/>
+    <functioncall functionName="CalcBonus"/>
+    <functioncall functionName="DoTitle"/>
+    <functioncall functionName="DrawSprite"/>
+    <functioncall functionName="EXIT_BOTTOM"/>
+    <functioncall functionName="EXIT_LEFT"/>
+    <functioncall functionName="EXIT_RIGHT"/>
+    <functioncall functionName="EXIT_TOP"/>
+    <functioncall functionName="EnableIRQ"/>
+    <functioncall functionName="FireBullet"/>
+    <functioncall functionName="GenerateMaze"/>
+    <functioncall functionName="GetLevelFromScore"/>
+    <functioncall functionName="InitActor"/>
+    <functioncall functionName="InitActors"/>
+    <functioncall functionName="InitBulletSCBs"/>
+    <functioncall functionName="InitMaze"/>
+    <functioncall functionName="InitRobotSCBs"/>
+    <functioncall functionName="InitScoreSCBs"/>
+    <functioncall functionName="InitSound"/>
+    <functioncall functionName="InitSystem"/>
+    <functioncall functionName="RawPrintString"/>
+    <functioncall functionName="SetBGTestColour"/>
+    <functioncall functionName="SetColour"/>
+    <functioncall functionName="SetPalette"/>
+    <functioncall functionName="SmpInit"/>
+    <functioncall functionName="SmpStart"/>
+    <functioncall functionName="StartSound"/>
+    <functioncall functionName="SwapBuffers"/>
+    <functioncall functionName="UpdateActors"/>
+    <functioncall functionName="UpdateScoreDisplay"/>
+    <functioncall functionName="UpdateSound"/>
+    <functioncall functionName="UpdateSprites"/>
+    <functioncall functionName="WaitKey"/>
+    <functioncall functionName="WaitSuzy"/>
+    <functioncall functionName="abs"/>
+    <functioncall functionName="asm"/>
+    <functioncall functionName="befok_palette"/>
+    <functioncall functionName="bgSCB"/>
+    <functioncall functionName="bg_clear"/>
+    <functioncall functionName="bg_plot"/>
+    <functioncall functionName="bg_rectangle"/>
+    <functioncall functionName="bgcol"/>
+    <functioncall functionName="bonus"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="bulletLimit"/>
+    <functioncall functionName="bulletSCB"/>
+    <functioncall functionName="bulletSpeed"/>
+    <functioncall functionName="c"/>
+    <functioncall functionName="char"/>
+    <functioncall functionName="clearSCB"/>
+    <functioncall functionName="collResult"/>
+    <functioncall functionName="colour"/>
+    <functioncall functionName="counter"/>
+    <functioncall functionName="d1"/>
+    <functioncall functionName="d3"/>
+    <functioncall functionName="dig0"/>
+    <functioncall functionName="dig1"/>
+    <functioncall functionName="dig2"/>
+    <functioncall functionName="dig3"/>
+    <functioncall functionName="dig4"/>
+    <functioncall functionName="dig5"/>
+    <functioncall functionName="dig6"/>
+    <functioncall functionName="dig7"/>
+    <functioncall functionName="dig8"/>
+    <functioncall functionName="dig9"/>
+    <functioncall functionName="dx"/>
+    <functioncall functionName="dy"/>
+    <functioncall functionName="enemy"/>
+    <functioncall functionName="explode1"/>
+    <functioncall functionName="explode2"/>
+    <functioncall functionName="explode3"/>
+    <functioncall functionName="explode4"/>
+    <functioncall functionName="explode5"/>
+    <functioncall functionName="explode6"/>
+    <functioncall functionName="fire_prev"/>
+    <functioncall functionName="firedata"/>
+    <functioncall functionName="flipOffset"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="frame"/>
+    <functioncall functionName="h"/>
+    <functioncall functionName="hcount"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="index"/>
+    <functioncall functionName="init_seq"/>
+    <functioncall functionName="instrBounce"/>
+    <functioncall functionName="instrExplode"/>
+    <functioncall functionName="instrHit"/>
+    <functioncall functionName="instrZapper"/>
+    <functioncall functionName="itoa"/>
+    <functioncall functionName="j"/>
+    <functioncall functionName="joypad"/>
+    <functioncall functionName="joystick"/>
+    <functioncall functionName="laser_diag1"/>
+    <functioncall functionName="laser_diag2"/>
+    <functioncall functionName="laser_lr"/>
+    <functioncall functionName="laser_up"/>
+    <functioncall functionName="level"/>
+    <functioncall functionName="life_spr"/>
+    <functioncall functionName="lives"/>
+    <functioncall functionName="maze_start"/>
+    <functioncall functionName="memcpy"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="n"/>
+    <functioncall functionName="numBullets"/>
+    <functioncall functionName="numRobots"/>
+    <functioncall functionName="otto1"/>
+    <functioncall functionName="otto2"/>
+    <functioncall functionName="ottoSCB"/>
+    <functioncall functionName="p"/>
+    <functioncall functionName="palmap"/>
+    <functioncall functionName="pdata"/>
+    <functioncall functionName="pl_x"/>
+    <functioncall functionName="pl_y"/>
+    <functioncall functionName="player"/>
+    <functioncall functionName="playerSCB"/>
+    <functioncall functionName="player_down1"/>
+    <functioncall functionName="player_down2"/>
+    <functioncall functionName="player_down3"/>
+    <functioncall functionName="player_down4"/>
+    <functioncall functionName="player_down5"/>
+    <functioncall functionName="player_down6"/>
+    <functioncall functionName="player_hit"/>
+    <functioncall functionName="player_hit1"/>
+    <functioncall functionName="player_hit2"/>
+    <functioncall functionName="player_hit3"/>
+    <functioncall functionName="player_hit4"/>
+    <functioncall functionName="player_left1"/>
+    <functioncall functionName="player_left2"/>
+    <functioncall functionName="player_left3"/>
+    <functioncall functionName="player_left4"/>
+    <functioncall functionName="player_left5"/>
+    <functioncall functionName="player_left6"/>
+    <functioncall functionName="player_up1"/>
+    <functioncall functionName="player_up2"/>
+    <functioncall functionName="player_up3"/>
+    <functioncall functionName="player_up4"/>
+    <functioncall functionName="player_up5"/>
+    <functioncall functionName="player_up6"/>
+    <functioncall functionName="playfield"/>
+    <functioncall functionName="rand"/>
+    <functioncall functionName="random"/>
+    <functioncall functionName="reset_workpal"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="robot1"/>
+    <functioncall functionName="robot2"/>
+    <functioncall functionName="robot3a"/>
+    <functioncall functionName="robot4"/>
+    <functioncall functionName="robotB"/>
+    <functioncall functionName="robotCells"/>
+    <functioncall functionName="robotG"/>
+    <functioncall functionName="robotR"/>
+    <functioncall functionName="robotSCB"/>
+    <functioncall functionName="robot_down1"/>
+    <functioncall functionName="robot_down2"/>
+    <functioncall functionName="robot_down3"/>
+    <functioncall functionName="robot_down4"/>
+    <functioncall functionName="robot_left1"/>
+    <functioncall functionName="robot_left2"/>
+    <functioncall functionName="robot_left3"/>
+    <functioncall functionName="robot_left4"/>
+    <functioncall functionName="robot_up1"/>
+    <functioncall functionName="robot_up2"/>
+    <functioncall functionName="robot_up3"/>
+    <functioncall functionName="robot_up4"/>
+    <functioncall functionName="room_number"/>
+    <functioncall functionName="s"/>
+    <functioncall functionName="scbIndex"/>
+    <functioncall functionName="score"/>
+    <functioncall functionName="scoreSCB"/>
+    <functioncall functionName="scrbase"/>
+    <functioncall functionName="searchStart"/>
+    <functioncall functionName="smp_intruder"/>
+    <functioncall functionName="sprclr"/>
+    <functioncall functionName="startSCB"/>
+    <functioncall functionName="startScore"/>
+    <functioncall functionName="state"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="switch"/>
+    <functioncall functionName="sx"/>
+    <functioncall functionName="sy"/>
+    <functioncall functionName="tgi_clear"/>
+    <functioncall functionName="tgi_init"/>
+    <functioncall functionName="tgi_install"/>
+    <functioncall functionName="tgi_setcollisiondetection"/>
+    <functioncall functionName="tgi_sprite"/>
+    <functioncall functionName="tgi_static_stddrv"/>
+    <functioncall functionName="tgi_updatedisplay"/>
+    <functioncall functionName="tx"/>
+    <functioncall functionName="ty"/>
+    <functioncall functionName="type"/>
+    <functioncall functionName="while"/>
+    <functioncall functionName="x"/>
+    <functioncall functionName="x0"/>
+    <functioncall functionName="y"/>
+    <functioncall functionName="y0"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,19 @@
+Berzerk sprite sizes:
+
+player:		6x9
+robot body:	8x8
+robot head:	6x2
+bullet:		4x2
+laser l/r:	6x1
+laser u/d:	2x4
+laser diag:	4x3
+otto:		12x10
+gold:		8x4
+pl_hit:		8x9
+robot_hit:	8x9
+explode1:	6x4
+explode2:	8x7
+explode3:	10X8
+explode4:	10x9
+explode5:	10x9
+explode6:	10x8

@@ -1,0 +1,79 @@
+<HTML>
+
+<HEAD>
+<TITLE> Making Mephistophelean mazes </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#000050" TEXT="#FFFFBB"
+      LINK="#FFFF00" ALINK="#FF8888" VLINK="#CCCC00">
+<H1> Making Mephistophelean mazes </H1>
+<P> I recently stumbled across
+<A HREF="http://clark.lcs.mit.edu/~shivers/mazes.html">some Web pages</A>
+in which
+<A HREF="http://clark.lcs.mit.edu/~shivers/">Olin Shivers</A>,
+a computer scientist at MIT, discusses generating mazes by computer.
+The basic algorithm (which he tells me he didn't invent)
+is as follows:
+<UL>
+ <LI>You start off with some sort of regular grid of cells,
+     with walls between them (say, the cells of a honeycomb).
+ <LI>You go through all those walls in random order.
+ <UL>
+  <LI>When you come to a wall, you knock it down unless doing so
+      would mean that there were two cells connected by two different
+      paths. (In other words, unless the two cells on either side
+      of the wall were already connected.)
+ </UL>
+ <LI>When you've done this, you end up with every cell connected to
+     every other cell in exactly one way.
+ <LI>Then you pick a starting point and a finishing point which are
+     as far apart as possible (or something), and you're done.
+</UL>
+The nice thing is that there's a really excellent data structure for
+keeping track of which cells are connected to which other cells,
+which lets you do both checking for connectedness and joining
+previously unconnected cells in more or less constant time.
+
+<P> Unfortunately, his program is written in
+<A HREF="http://www-swiss.ai.mit.edu/~jar/s48.html">Scheme 48</A>,
+which is a wonderful language in most respects but not very
+efficient either in space or in time: creating his biggest maze
+(350x450 cells, in a honeycomb pattern) took over an hour and a half
+of CPU time, and much much more real time. (This was on a P90 box
+of some sort.)
+
+<P> So, I've implemented basically the same algorithm, but with
+a few improvements, in C. The resulting program runs really
+fast (a 350x450 maze takes about 8.5 seconds on a SPARCstation 5;
+unfortunately I don't have a 90MHz Pentium box for comparison),
+and produces considerably nicer PostScript output too. (Smaller
+by about a factor of 20, and much nicer to look at when it's printed
+out.)
+
+<P> Please feel free to grab <A HREF="make-maze.c">the source code</A>
+(about 19k of C). You might prefer to have a look at some mazes, in
+PostScript: I have
+<UL>
+ <LI><A HREF="45x50.ps">a small one</A> (45 by 50 cells, about 9k),
+ <LI><A HREF="90x100.ps">a larger one</A> (90 by 100 cells, about 26k),
+ <LI><A HREF="150x170.ps">an even larger one</A>
+     (150 by 170 cells, about 64k), and
+ <LI><A HREF="360x400.ps">an excessively large one</A>
+     (360 by 400 cells, about 317k).
+</UL>
+
+<P> You can find <A HREF="ftp://clark.lcs.mit.edu/pub/su/maze.tar.gz">Olin
+Shivers's original Scheme code</A>, as a gzipped tarfile, on the FTP
+site at <CODE>clark.lcs.mit.edu</CODE>. It doesn't seem to include code for
+outputting PostScript, but it does include code for outputting a maze
+as ASCII, which I suppose is OK if your maze isn't very large...
+
+<P> <HR>
+
+<P> This page last updated: 19th September 1995.
+
+<P> <A HREF="http://www.pmms.cam.ac.uk/~gjm11">Gareth McCaughan</A>
+<ADDRESS>gjm11@{pmms,cus}.cam.ac.uk</ADDRESS>
+</BODY>
+
+</HTML>

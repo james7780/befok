@@ -1,0 +1,6 @@
+audio.a1:Debug|Win32:C:/dev/cc65/befok/audio.c
+audio.a2:Release|Win32:C:/dev/cc65/befok/audio.c
+befok.a1:Debug|Win32:C:/dev/cc65/befok/befok.c
+befok.a2:Release|Win32:C:/dev/cc65/befok/befok.c
+maze.a1:Debug|Win32:C:/dev/cc65/befok/maze.c
+maze.a2:Release|Win32:C:/dev/cc65/befok/maze.c
