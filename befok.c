@@ -117,11 +117,10 @@ uchar random()
 }
 
 /*************** for OBJECTS *************************/
-#define MAX_ROBOTS		8
+#define MAX_ROBOTS		10				// 8
 #define MAX_BULLETS		7				// 2 player + 5 enemy
-#define NUM_OBJS		16				// otto + 8 robots + 7 bullets
+#define NUM_OBJS		18				// otto + 10 robots + 7 bullets
 struct ACTOR_TYPE obj[NUM_OBJS];
-//uchar obj_max;
 
 // Level data struct
 typedef struct LEVELDATA {
@@ -152,9 +151,9 @@ typedef struct LEVELDATA {
 #define NUM_LEVELS	13
 struct LEVELDATA levelData[NUM_LEVELS]	=	{
 	{ 0,     6,	0,  4, 0xE0, 0xD0, 0x20 },				// Dark yellow robots, no bullets
-	{ 500,   6, 1,  6, 0xD0, 0x20, 0x00 },				// Red robots, 1 bullet
-	{ 1500,  7, 2,  6, 0x20, 0x20, 0xA0 },				// Dark cyan robots, 2 bullets
-	{ 3000,  7, 3,  6, 0x00, 0xF0, 0x00 },				// Green robots, 3 bullets
+	{ 500,   7, 1,  6, 0xD0, 0x20, 0x00 },				// Red robots, 1 bullet
+	{ 1500,  8, 2,  6, 0x20, 0x20, 0xA0 },				// Dark cyan robots, 2 bullets
+	{ 3000,  9, 3,  6, 0x00, 0xF0, 0x00 },				// Green robots, 3 bullets
 	{ 4500,  MAX_ROBOTS, 4,  6, 0xA0, 0x20, 0xA0 },		// Dark purple 
 	{ 6000,  MAX_ROBOTS, 5,  6, 0xF0, 0xF0, 0x00 },		// Light yellow
 	{ 7500,  MAX_ROBOTS, 1, 10, 0xF0, 0xF0, 0xF0 },		// White
@@ -247,10 +246,20 @@ extern char laser_lr[];
 extern char laser_diag1[];
 extern char laser_diag2[];
 
-#include "images/berzerk_title.h"	// Title sprite data
+//#include "images/berzerk_title.h"	// Title sprite data
 #include "sprites_new.h"			// sprite data for robots, play, otto
 #include "sprites.c"                // sprite data for digits
 #include "explosions.c"				// sprite data for explosions
+
+#include "audio/smp_intruder.c"
+#include "audio/smp_alert.c"
+#include "audio/smp_chicken.c"
+//#include "audio/smp_fight.c"
+//#include "audio/smp_like.c"
+//#include "audio/smp_aye.c"
+//#include "audio/smp_robot.c"
+#include "audio/smp_destroy.c"
+//#include "audio/smp_humanoid.c"
 
 unsigned char *animframe_player_left[6] = { player_left1, player_left2, player_left3, player_left4, player_left5, player_left6 };
 unsigned char *animframe_player_up[6] = { player_up1, player_up2, player_up3, player_up4, player_up5, player_up6 };
@@ -260,6 +269,7 @@ unsigned char *animframe_robot_up[4] = { robot_up1, robot_up2, robot_up3, robot_
 unsigned char *animframe_robot_down[4] = { robot_down1, robot_down2, robot_down3, robot_down4 };
 unsigned char *animframe_robot_left[4] = { robot_left1, robot_left2, robot_left3, robot_left4 };
 unsigned char *animframe_explosion[6] = { explode1, explode2, explode3, explode4, explode5, explode6 };
+
 
 //extern char title[];				// title bmp
 //extern char mp[];					// sequence
@@ -351,14 +361,14 @@ struct SCB ottoSCB =	{	0xc4,			// 4bpp,  normal collidable
 							{ 0x01, 0x23, 0x45, 0x67, 0x89, 0xab, 0xcd, 0xef },
 							0 };
 
-// Title SCB
-struct SCB titleSCB =	{	0x44,			// 2bpp, background no collision
-							0x18,			// compressed, scaleXY, re-use palette
-							0x00,			// collision number 0
-							NULL, berzerk_title,	//pl_d1,
-							0x140, 0x120, 0x100, 0x100,
-							{ 0x01, 0x23, 0x45, 0x67, 0x89, 0xab, 0xcd, 0xef },
-							0 };
+//// Title SCB
+//struct SCB titleSCB =	{	0x44,			// 2bpp, background no collision
+//							0x18,			// compressed, scaleXY, re-use palette
+//							0x00,			// collision number 0
+//							NULL, berzerk_title,	//pl_d1,
+//							0x140, 0x120, 0x100, 0x100,
+//							{ 0x01, 0x23, 0x45, 0x67, 0x89, 0xab, 0xcd, 0xef },
+//							0 };
 
 
 
@@ -898,9 +908,9 @@ void UpdateActors(uchar level, uchar bulletLimit)
 								pObject->state = STATE_MOVE;
 								pObject->counter = 600;	// chase player for 600 cycles
 								// play sample
-								//SmpInit(3, 7);		// init sample player to use channel 3, timer 7
-								//EnableIRQ(7);
-								//SmpStart(smp_intruder,0);
+								PlaySample(smp_destroy);
+								WaitFrames(10);	// ~1 seconds
+								PlaySample(smp_intruder);
 							}
 							break;
 						case STATE_MOVE :		// chase player
@@ -1538,6 +1548,7 @@ void DoTitle(void)
 		WaitKey();
 		}
 */
+/*
 	int i;
 	clearSCB.next = &titleSCB;
 	//titleSCB.vscale = 0x8;
@@ -1549,7 +1560,7 @@ void DoTitle(void)
 		if (SUZY.joystick)
 			i = 255;
 		}
-
+*/
 	//for (i = 8; i < 513; i += 8)
 	//	{
 	//	titleSCB.vscale = i;
@@ -1558,10 +1569,10 @@ void DoTitle(void)
 	//	}
 
 	// Minimum title screen
-	//RawPrintString(17, 48, "BEZERKOIDS ALPHA");
 	DrawSprite(&clearSCB);
-	RawPrintString(18, 84, "BY JUM HIG 2018");
 	SwapBuffers();
+	RawPrintString(17, 48, "BEZERKOIDS ALPHA");
+	RawPrintString(18, 84, "BY JUM HIG 2018");
 	WaitKey();
 
 	clearSCB.next = &bgSCB;
@@ -1652,7 +1663,7 @@ void UpdateSprites()
 			case OTTO :
 				ottoSCB.hpos = pActor->x >> 2;
 				ottoSCB.vpos = (pActor->y - pActor->d1) >> 2;
-				if(pActor->d1 & 0xF8) ottoSCB.data = otto1;
+				if (pActor->d1 & 0xF8) ottoSCB.data = otto1;
 				else ottoSCB.data = otto2;
 				break;
 			} // end switch object active
@@ -1792,7 +1803,7 @@ tgi_setcollisiondetection(1);
 new_game:
 
 // For some reason DoTitle screws up the screen flipping
-//	DoTitle();
+	//DoTitle();
 
 	//DoCheckerboardFade();
 
@@ -1815,32 +1826,11 @@ level_start:
 	fb = 1;
 	fcount = 0;
 
-	//init_seq();
-	//InitObjSeq();
-	//objseqslow = 8;						// 8 frames between every obj seq tick
-
-//WaitSuzy();
-//clearSCB.next = NULL;
-//DrawSprite(&clearSCB);
-//RawPrintString(0, 0, "INIT MAZE");
-//SwapBuffers();
-//WaitKey();
-
 	// from maze.c
 	InitMaze();
 	GenerateMaze(room_number);
 	bg_clear();
 	bg_plot();
-
-//clearSCB.next = &bgSCB;
-//bgSCB.next = NULL;
-//WaitSuzy();
-//DrawSprite(&clearSCB);	//bgSCB);	//&bgSCB);
-//DrawSprite(&bgSCB);
-//RawPrintString(0, 0, "BG PLOT");
-//SwapBuffers();
-//WaitKey();
-
 
 	// Set up robots and bullets SCB "arrays"
 	InitRobotSCBs();
@@ -1862,10 +1852,20 @@ level_start:
 	playerSCB.hpos = (pl_x >> 2) + flipOffset;		// adjust for hflipping when moving left/right
 	playerSCB.vpos = (pl_y >> 2) - 5;
 
-    //// play sample
-    //SmpInit(3, 7);              // init sample player to use channel 3, timer 7
-    //EnableIRQ(7);
-    //SmpStart(smp_chicken,0);
+    // play sample
+	PlaySample(smp_intruder);
+	WaitFrames(8);
+	PlaySample(smp_alert);
+	//WaitFrames(8);
+	//PlaySample(smp_chicken);
+	//WaitFrames(8);
+	//PlaySample(smp_fight);
+	//PlaySample(smp_like);
+	//PlaySample(smp_aye);
+	//PlaySample(smp_robot);
+	//PlaySample(smp_destroy);
+	//WaitFrames(8);
+	//PlaySample(smp_humanoid);
 
 	fire_prev = 0; sx = 8; sy = 0;
 	exited = 0;
@@ -1963,8 +1963,15 @@ level_start:
 				playerSCB.data = animframe_player_left[(pl_x >> 2) % 6];
 				}
 
-			playerSCB.hpos = (pl_x >> 2) + flipOffset;		// adjust for hflipping when moving left/right
-			playerSCB.vpos = (pl_y >> 2) - 5;
+			if (exited)
+				{
+				playerSCB.vpos = 0x400;		// putplayer offscreen
+				}
+			else
+				{
+				playerSCB.hpos = (pl_x >> 2) + flipOffset;		// adjust for hflipping when moving left/right
+				playerSCB.vpos = (pl_y >> 2) - 5;
+				}
 
 			// preload fire directions
 			switch(j & 0xF0)
@@ -2046,7 +2053,6 @@ level_start:
 		//itoa(playerSCB.collResult, s, 10);
 		//itoa(level, s, 10);
 		//RawPrintString(0, 0, s);
-
 
         // check for player collision with anything
         if(!player_hit)
@@ -2187,9 +2193,10 @@ TextOut(0x110, 0x15C, 13, 5, s);
 	// exited maze, do next maze?
 	if (1 == exited)
 		{
-		playerSCB.hpos = 0;
-		playerSCB.vpos = 0;
+		//playerSCB.hpos = 0;
+		//playerSCB.vpos = 0;
 
+//		PlaySample(smp_alert, 2590);
 		// Add bonus if all robots killed
 		bonus = CalcBonus(level);
 		if (bonus > 0)
@@ -2203,6 +2210,11 @@ TextOut(0x110, 0x15C, 13, 5, s);
 			SwapBuffers();
 
 			WaitFrames(150);	// ~2.5 seconds
+			}
+		else
+			{
+			PlaySample(smp_chicken);
+			WaitFrames(60);	// ~1 seconds
 			}
 
 		// Update room number

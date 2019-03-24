@@ -11,8 +11,6 @@
 
 #include <stdlib.h>
 #include <lynx.h>
-//#include <lynxlib.h>
-//#include <global.h>
 
 /* width and height of maze (must be multiple of 2) */
 #define MAZE_WIDTH   14
@@ -27,7 +25,7 @@ char maze[MAZE_WIDTH][MAZE_HEIGHT];
 // Initialise maze data
 void InitMaze(void)
 {
-	int i, j;
+	unsigned char i, j;
 
     // make all wall
 	for(i=0; i<MAZE_WIDTH; i++) {
@@ -68,7 +66,7 @@ int GenerateMaze(unsigned int seed) {
         dir_tried = 0;
         while(dir_tried != 0xF) {
 			//d = random()%4;
-			d = rand()%4;
+			d = rand() % 4;
         	switch(d) {
         		case 0 :	// up?
             		if(maze[x][y-2] == WALL) {

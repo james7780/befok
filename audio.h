@@ -30,4 +30,4 @@ extern void StartSound(uchar channel, struct INSTRUMENT *instrument, char vol, u
 extern void EndSound(uchar channel);
 extern void EndAllSound(void);
 extern void UpdateSound(void);
-extern void PlaySample(void *sampleData, unsigned int length);
+extern void PlaySample(uchar *sampleData);

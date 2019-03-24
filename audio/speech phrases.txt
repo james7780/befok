@@ -1,0 +1,29 @@
+When Otto appears: "Intruder alert"
+
+When you exit screen without killing all robots: "Chicken fight like a robot"
+
+When you exit screen, all robots dead: "stop the humanoid, stop the intruder"
+
+When you die: "Stop the humanoid, stop the intruder"
+
+
+Other possibilities:
+"Destroy the intruder"
+
+Lynx sample header format:
+struct {
+  char unpacked;
+  char lenhi;
+  char lenlo;
+  char divider;
+  char stereo;
+  char data[len];
+}sample;
+
+
+Sewt channel to "sample mode":
+        // Disable count
+        CTLB_REG(chan) = 0x0;
+        CTLA_REG(chan) = 0x10;
+        STEREO_REG = 0;
+

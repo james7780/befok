@@ -143,9 +143,10 @@ void EndSound(uchar channel)
 /// Stop sound on all channels
 void EndAllSound(void)
 {
-	uchar channel;
-	for (channel = 0; channel < NUM_CHANNELS; channel++)
-		EndSound(channel);
+	EndSound(0);
+	EndSound(1);
+	EndSound(2);
+	EndSound(3);
 }
 
 
@@ -184,18 +185,45 @@ void UpdateSound(void)
 			{
 			// We have reached the end of the envelope
 			instrument->envPos = 0xFF;		// deactivate this instrument
-			EndSound(0);					// switch off sound on this channel
+			EndSound(channel);					// switch off sound on this channel
 			}
 		}
 #endif
 }
 
 /// Play a sample on channel 3  (***BLOCKING***)
-void PlaySample(void *sampleData, unsigned int length)
+void PlaySample(uchar *sampleData)
 {
 #ifdef ENABLE_AUDIO
-	// TODO - Write sample data to DAC
+	uchar *dataPos;
+	unsigned int count;
+	uchar j;
+	uchar divider;
+	dataPos = sampleData;
+	dataPos++;
+	count = *dataPos << 8;
+	dataPos++;
+	count |= *dataPos;
+	dataPos++;
+	divider = *dataPos;
+	dataPos = sampleData + 5;
 
+	MIKEY.channel_d.reload = 0;
+	MIKEY.channel_d.control = 0x10;
+	MIKEY.channel_d.volume = 127;
+	while (--count)
+		{
+		MIKEY.channel_d.dac = *dataPos;
+		dataPos++;
+		// wait 200 cycles (for 5000 Hz)
+		//j = 12;
+		j = divider >> 4;			// tune for pitch
+		while (j--)
+			{
+			asm("nop");			// yeah yeah i know this will be much more than 200 cycles!
+			}
+		}
+	MIKEY.channel_d.volume = 0;
 #endif
 }
 
