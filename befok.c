@@ -246,7 +246,7 @@ extern char laser_lr[];
 extern char laser_diag1[];
 extern char laser_diag2[];
 
-//#include "images/berzerk_title.h"	// Title sprite data
+#include "images/berzerk_title.h"	// Title sprite data
 #include "sprites_new.h"			// sprite data for robots, play, otto
 #include "sprites.c"                // sprite data for digits
 #include "explosions.c"				// sprite data for explosions
@@ -254,11 +254,11 @@ extern char laser_diag2[];
 #include "audio/smp_intruder.c"
 #include "audio/smp_alert.c"
 #include "audio/smp_chicken.c"
+#include "audio/smp_destroy.c"
 //#include "audio/smp_fight.c"
 //#include "audio/smp_like.c"
 //#include "audio/smp_aye.c"
 //#include "audio/smp_robot.c"
-#include "audio/smp_destroy.c"
 //#include "audio/smp_humanoid.c"
 
 unsigned char *animframe_player_left[6] = { player_left1, player_left2, player_left3, player_left4, player_left5, player_left6 };
@@ -361,14 +361,14 @@ struct SCB ottoSCB =	{	0xc4,			// 4bpp,  normal collidable
 							{ 0x01, 0x23, 0x45, 0x67, 0x89, 0xab, 0xcd, 0xef },
 							0 };
 
-//// Title SCB
-//struct SCB titleSCB =	{	0x44,			// 2bpp, background no collision
-//							0x18,			// compressed, scaleXY, re-use palette
-//							0x00,			// collision number 0
-//							NULL, berzerk_title,	//pl_d1,
-//							0x140, 0x120, 0x100, 0x100,
-//							{ 0x01, 0x23, 0x45, 0x67, 0x89, 0xab, 0xcd, 0xef },
-//							0 };
+// Title SCB
+struct SCB titleSCB =	{	0x44,			// 2bpp, background no collision
+							0x18,			// compressed, scaleXY, re-use palette
+							0x00,			// collision number 0
+							NULL, berzerk_title,	//pl_d1,
+							0x106, 0x120, 0x100, 0x100,
+							{ 0x01, 0x23, 0x45, 0x67, 0x89, 0xab, 0xcd, 0xef },
+							0 };
 
 
 
@@ -941,92 +941,6 @@ void UpdateActors(uchar level, uchar bulletLimit)
 }
 
 /*
-// init seq player
-// NB: sequence length (ticks) must be set manually
-void init_seq(void)
-{
-	uchar i;
-	uint len, offset;
-
-	// set track offsets
-	offset = 8;
-	seqlength = 0;
-	for(i=0; i<4; i++) {
-		track[i] = mp + offset;
-		len = (uchar)mp[i*2];
-		len += (uchar)mp[i*2+1] << 8;
-		offset += len;
-	}
-
-	// set envelopes
-	vestart[0] = env1;			// piano
-	vestart[1] = env1;
-	vestart[2] = env3;			// side-kick
-	vestart[3] = env1;
-	ve[0] = vestart[0];
-	ve[1] = vestart[1];
-	ve[2] = vestart[2];
-	ve[3] = vestart[3];
-
-	// set initial volumes
-	for(i=0; i<4; i++) note_vol[i] = 0;
-	
-	// activate tracks
-	trk_on[0] = 0;
-	trk_on[1] = 1;
-	trk_on[2] = 1;
-	trk_on[3] = 0;
-
-	// set sequence length (MANUAL!!!)
-	seqlength = 0x0500;
-	
-	// init timer count
-	seqtime = 0;
-}
-*/
-
-/*
-// poll/update sequence player
-// NB: shift bits must be written before counter started.
-// NB: all values reset to 0 at reset (eg: attenX)
-// NB: at least one feedback tap must be on to get a sound.
-void poll_seq(void)
-{
-	uchar i;
-	uint trk_time, tvol;
-	uchar *t;
-
-	for(i=0; i<4; i++) {
-		if(trk_on[i]) {
-			trk_time = *(uint *)track[i];			// ouch!
-			if(trk_time <= seqtime) {				// note on
-				t = track[i];
-				// reset vol env pntr to start of envelope
-				ve[i] = vestart[i];
-				// set freq and note vol for this channel
-				channels[i].reload = t[3];
-				channels[i].feedback = t[4];
-				note_vol[i] = (t[2] & 0x3f);
-				track[i] += 5;						// update pointer
-			}
-
-			// update volume from volume envelope
-			// first check if this is a loop command
-			if(*ve[i] & 0x80) ve[i] = vestart[i] + (*ve[i] - 128) * 2;	// optimise!
-			tvol = note_vol[i] * ve[i][0];
-			tvol = tvol >> 7;
-			channels[i].volume = tvol & 0x3f;		// mult by 2!
-			ve[i]++;
-		}
-	}
-	// update counter and loop if neccessary
-	seqtime++;
-	if(seqtime > seqlength) init_seq();
-}
-*/
-
-
-/*
 // checkerboard fade
 void DoCheckerboardFade(void) {
 	uchar *i;
@@ -1401,6 +1315,20 @@ void SwapBuffers()
 */
 }
 
+unsigned char *samples[4] = { smp_alert, smp_chicken, smp_destroy, smp_intruder };
+
+// Play two consecutive random voice samples
+void PlayRandomSpeech()
+{
+	uchar i, r;
+	for (i = 0; i < 2; i++)
+		{
+		r = random() & 0x03;
+		PlaySample(samples[r]);
+		WaitFrames(8);
+		}
+}
+
 // Initialise Lynx, display and sound
 void InitSystem()
 {
@@ -1515,7 +1443,7 @@ void DoClearTest()
 */
 
 // Do the Title screen
-void DoTitle(void)
+void DoTitle(int hiscore)
 {
 /*
 	uint vscale = 0x1;
@@ -1548,37 +1476,36 @@ void DoTitle(void)
 		WaitKey();
 		}
 */
-/*
-	int i;
-	clearSCB.next = &titleSCB;
-	//titleSCB.vscale = 0x8;
-	for (i = 0; i < 264; i++)
-		{
-		titleSCB.hpos = i;
-		DrawSprite(&clearSCB);
-		SwapBuffers();
-		if (SUZY.joystick)
-			i = 255;
-		}
-*/
-	//for (i = 8; i < 513; i += 8)
-	//	{
-	//	titleSCB.vscale = i;
-	//	DrawSprite(&clearSCB);
-	//	SwapBuffers();
-	//	}
+
+// Pen 1 GRB = 4D4
+	uchar c = 0;
+	//char *s = "HIGH SCORE 00000\0";
+	//itoa(hiscore, s + 11, 6);			// Does not seem to work for ints
 
 	// Minimum title screen
-	DrawSprite(&clearSCB);
-	SwapBuffers();
-	RawPrintString(17, 48, "BEZERKOIDS ALPHA");
-	RawPrintString(18, 84, "BY JUM HIG 2018");
-	WaitKey();
+	clearSCB.next = &titleSCB;
+	while (1)
+		{
+		DrawSprite(&clearSCB);
+		RawPrintString(18, 64, "BY JUM HIG 2018");
+		//RawPrintString(18, 74, s);
+		VSYNC();
+		SwapBuffers();
+		//RawPrintString(17, 48, "BEZERKOIDS ALPHA");
+		RawPrintString(18, 64, "BY JUM HIG 2018");
+		//RawPrintString(18, 74, s);
+		if (SUZY.joystick)
+			break;
+		// Cycle colour 1 (title background)
+		MIKEY.palette[1] = c;
+		MIKEY.palette[17] = c;
+		c++;	// lol
+		}
 
 	clearSCB.next = &bgSCB;
 
-	// fade out palette
-	//fade_out();
+	// Restore palette that we have messed with
+	SetPalette(befok_palette);
 }
 
 /// Update the sprite chain from the game objects (robots, otto etc)
@@ -1797,13 +1724,25 @@ tgi_setcollisiondetection(1);
 //  test
 	InitSound();
 
+	clearSCB.next = NULL;
+	DrawSprite(&clearSCB);
+	VSYNC();
+	SwapBuffers();
+
+    // play sample
+	PlaySample(smp_intruder);
+	WaitFrames(8);
+	PlaySample(smp_alert);
+
 	// display title screen
 // Main outer game loop here:
 // Title -> Intro -> Game -> Hiscore 
 new_game:
 
 // For some reason DoTitle screws up the screen flipping
-	//DoTitle();
+	DoTitle(hiscore);
+
+	clearSCB.next = &bgSCB;
 
 	//DoCheckerboardFade();
 
@@ -1853,9 +1792,10 @@ level_start:
 	playerSCB.vpos = (pl_y >> 2) - 5;
 
     // play sample
-	PlaySample(smp_intruder);
-	WaitFrames(8);
-	PlaySample(smp_alert);
+	PlayRandomSpeech();
+	//PlaySample(smp_intruder);
+	//WaitFrames(8);
+	//PlaySample(smp_alert);
 	//WaitFrames(8);
 	//PlaySample(smp_chicken);
 	//WaitFrames(8);
@@ -2025,7 +1965,7 @@ level_start:
 					StartSound(0, &instrZapper, 63, 0);
 					}
 				} // end if fire
-			}
+			} // end if do player
 
 		// move CPU controlled objects
 		UpdateActors(level, bulletLimit);
@@ -2039,14 +1979,14 @@ level_start:
 		// Clear collision buffer
 		playerSCB.collResult = 0;			// Is this neccessary?
 
+
         // Draw sprite chain
 		// (Clear -> Maze BG - > Robots (8) Otto -> Player -> Bullets (7) -> Score)
 		WaitSuzy();
-
+		VSYNC();
 		SwapBuffers();
-
 //SetBGTestColour(0x08);
-		DrawSprite(&clearSCB);			// Should really just need to draw BG SCB to clear
+		DrawSprite(&clearSCB);			// Draw sprite chain
 //SetBGTestColour(0x00);
 
 		//itoa(robotSCB[0].collResult, s, 10);
@@ -2231,12 +2171,18 @@ TextOut(0x110, 0x15C, 13, 5, s);
 		pl_y = 0x4B0; pl_x = 0x428;		// 4x coords
 
 		if(lives--)
+			{
+			if (score > hiscore)
+				hiscore = score;
+
 			goto level_start;
+			}
 		}
 
 	RawPrintString(30, 44, "GAME OVER");
 	SwapBuffers();
-	WaitKey();
+	WaitFrames(150);	// ~2.5 seconds
+
 	goto new_game;
 
 }
