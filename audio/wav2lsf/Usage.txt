@@ -1,0 +1,21 @@
+WAV2LSF 1.1 USAGE
+
+To get help on wav2lsf parameters, just run wav2lsf without any parameters.
+
+You will get this:
+Usage : wav2lsf [-c] [-h] [-v percentage] -o out in
+-c              Ouput as C file
+-h              Show histogram of sample
+-v percentage   Adjust output volume
+-o output_file  Specify the output file name
+
+There is another hidden option "-p" which outputs as a "packed" sample (does not work with "-c" option).
+
+Examples:
+
+wav2lsf -o mywav.lsf mywav.wav
+
+wav2lsf -c -o mywav.h mywav.wav
+
+- JH 2019-03-24
+
